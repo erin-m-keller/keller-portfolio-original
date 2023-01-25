@@ -97,13 +97,19 @@ p {
     font-family: Verdana, sans-serif;
     font-weight: normal;
     display: inline-block;
-    font-size: 43px;
+    font-size: 29px;
     color: #FFF;
     position: absolute;
     left: auto;
     right: auto;
     margin: 0 auto;
     top: 3.25em;
+}
+@media (min-width: 500px) {
+    .header-title {
+        font-size: 48px;
+        top: 3.25em;
+    }
 }
 @media (min-width: 1000px) {
     .header-title {
