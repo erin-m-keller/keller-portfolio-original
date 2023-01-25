@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/keller-portfolio/static/css/main.60f074e3.css",
-    "main.js": "/keller-portfolio/static/js/main.a945b3aa.js",
+    "main.css": "/keller-portfolio/static/css/main.6064084e.css",
+    "main.js": "/keller-portfolio/static/js/main.888d8874.js",
     "index.html": "/keller-portfolio/index.html",
-    "main.60f074e3.css.map": "/keller-portfolio/static/css/main.60f074e3.css.map",
-    "main.a945b3aa.js.map": "/keller-portfolio/static/js/main.a945b3aa.js.map"
+    "main.6064084e.css.map": "/keller-portfolio/static/css/main.6064084e.css.map",
+    "main.888d8874.js.map": "/keller-portfolio/static/js/main.888d8874.js.map"
   },
   "entrypoints": [
-    "static/css/main.60f074e3.css",
-    "static/js/main.a945b3aa.js"
+    "static/css/main.6064084e.css",
+    "static/js/main.888d8874.js"
   ]
 }

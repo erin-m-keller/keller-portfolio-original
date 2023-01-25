@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Work extends Component {
   render() {
     return (
-      <div>
+      <div className="temp-box">
         <h2>Work</h2>
       </div>
     );
