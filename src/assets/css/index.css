@@ -38,7 +38,9 @@ body {
     flex-direction: column;
 }
 a {
-    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #000;
     text-decoration: none;
 }
 p {
@@ -82,7 +84,7 @@ p {
    horizontal menu (desktop and mobile)
 ************************************************/
 .header {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--bg-color-three);
     color: #ffffff;
     width: 100%;
@@ -95,8 +97,19 @@ p {
     font-family: Verdana, sans-serif;
     font-weight: normal;
     display: inline-block;
-    font-size: 48px;
-    padding: 1.56em 20px;
+    font-size: 43px;
+    color: #FFF;
+    position: absolute;
+    left: auto;
+    right: auto;
+    margin: 0 auto;
+    top: 3.25em;
+}
+@media (min-width: 1000px) {
+    .header-title {
+        font-size: 60px;
+        top: 2em;
+    }
 }
 .header nav.desktop-menu {
     display: none;
@@ -107,7 +120,6 @@ p {
     position: relative;
     height: 100%;
     width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     padding: 0.5em;
     background-color: var(--bg-color-one);
@@ -228,7 +240,6 @@ p {
         height: 100%;
         margin-right: 20px;
         width: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
         background-color: var(--bg-color-one);
         border-bottom: 1px solid var(--bg-color-two);
@@ -270,10 +281,14 @@ p {
 /*************************
     end animation css 
 *************************/
-.hero {
-    height: 13em;
-    width: 100%;
-    background-color: var(--bg-color-four);
+.hero {    
+    padding: 1em;
+    height:100vh;
+    width:100vw;
+    background: url('../images/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png'), var(--bg-color-four);
+    background-size: 75%;
+    background-position: right 3em center;
+    background-repeat: no-repeat;
 }
 .hero .emphasis {
     padding: 30px 0 8px;
@@ -289,6 +304,16 @@ p {
     background: var(--bg-color-one);
     z-index: 2;
 }
+@media (min-width: 600px) {
+    .hero {    
+        background-size: 50%;
+    }
+}
+@media (min-width: 1100px) {
+    .hero {    
+        background-size: 35%;
+    }
+}
 
 /************************************************
    CONTENT                               @content
@@ -297,7 +322,8 @@ p {
 ************************************************/
 .content {
     flex-grow: 1;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     margin-top: 3em;
 }
 .temp-box {
@@ -305,7 +331,6 @@ p {
     padding: 1em;
     height:100vh;
     width:100vw;
-    margin-bottom: 1em;
 }
 
 /************************************************
@@ -314,13 +339,20 @@ p {
    The styles for the footer
 ************************************************/
 .footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     height: 3em;
     width: 100%;
     background-color: var(--bg-color-one);
+    display: table;
+    padding: 0.5em;
 }
 .footer h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    margin-top: 12px;
+    font-weight: normal;
+    padding-top: 12px;
+}
+.footer div.vertical-center {
+    display:table-cell;
+    vertical-align:middle;
 }

@@ -85,7 +85,10 @@ function Main () {
                 </section>
             </main>
             <footer className="footer">
-                <h3>&copy; 2023 Erin Keller</h3>
+                <div className="vertical-center">
+                    <h3>&copy; 2023 Erin Keller</h3>
+                    <a href="https://www.vecteezy.com/free-png/forest">Forest PNGs by Vecteezy</a>
+                </div>
             </footer>
         </React.Fragment>
     );
