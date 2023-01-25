@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.60f074e3.css",
-    "main.js": "/static/js/main.a945b3aa.js",
-    "index.html": "/index.html",
-    "main.60f074e3.css.map": "/static/css/main.60f074e3.css.map",
-    "main.a945b3aa.js.map": "/static/js/main.a945b3aa.js.map"
+    "main.css": "/keller-portfolio/static/css/main.60f074e3.css",
+    "main.js": "/keller-portfolio/static/js/main.a945b3aa.js",
+    "index.html": "/keller-portfolio/index.html",
+    "main.60f074e3.css.map": "/keller-portfolio/static/css/main.60f074e3.css.map",
+    "main.a945b3aa.js.map": "/keller-portfolio/static/js/main.a945b3aa.js.map"
   },
   "entrypoints": [
     "static/css/main.60f074e3.css",
