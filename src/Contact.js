@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Contact extends Component {
   render() {
     return (
-      <div className="temp-box">
+      <div className="content-section three">
         <h2>Contact me</h2>
       </div>
     );

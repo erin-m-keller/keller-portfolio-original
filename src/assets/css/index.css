@@ -18,11 +18,12 @@
    and links. Includes utility class styles
 ************************************************/
 :root {
-    --bg-color-one: #53dd6c;
-    --bg-color-two: #63a088;
-    --bg-color-three: #2a607c;
-    --bg-color-four: #56638a;
-    --bg-color-five: #56203d;
+    --bg-color-one: #704488;
+    --bg-color-two: #9297C3;
+    --bg-color-three: #b7e3cc;
+    --bg-color-four: #c4ffb2;
+    --bg-color-five: #d6f7a3;
+    --bg-color-six: #FFA69E;
 }
 * {
     box-sizing: border-box;
@@ -69,7 +70,7 @@ p {
 }
 .back-drop.active {
     opacity: 0.7;
-    background-color: var(--bg-color-five);
+    background-color: #191919;
     -webkit-animation: fadeIn 0.25s ease-in 0s 0.7 normal forwards;  
     -moz-animation: fadeIn 0.25s ease-in 0s 0.7 normal forwards;
     animation: fadeIn 0.25s ease-in 0s 0.7 normal forwards;
@@ -98,7 +99,7 @@ p {
     font-weight: normal;
     display: inline-block;
     font-size: 29px;
-    color: #FFF;
+    color: #000;
     position: absolute;
     left: auto;
     right: auto;
@@ -129,7 +130,7 @@ p {
     font-size: 20px;
     padding: 0.5em;
     background-color: var(--bg-color-one);
-    border-bottom: 1px solid var(--bg-color-one);
+    border-bottom: 1px solid #FFF;
 }
 .header nav.mobile-menu ul {
     list-style-type: none;
@@ -160,7 +161,7 @@ p {
 .header nav ul li a {
     display: inline-block;
     text-decoration: none;
-    color: #191919;
+    color: #FFF;
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -233,7 +234,7 @@ p {
 }
 #menu-btn.active .bar-three {
     transform: rotate(45deg);
-    top: 1.2em;
+    top: 1.7em;
 }
 @media (min-width: 600px) {
     .header nav.desktop-menu {
@@ -248,7 +249,7 @@ p {
         width: 100%;
         font-size: 20px;
         background-color: var(--bg-color-one);
-        border-bottom: 1px solid var(--bg-color-two);
+        border-bottom: 1px solid #FFF;
     }
     .header nav.desktop-menu ul li {
         display: inline-block;
@@ -291,7 +292,7 @@ p {
     padding: 1em;
     height:100vh;
     width:100vw;
-    background: url('../images/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png'), var(--bg-color-four);
+    background: url('../images/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png'), var(--bg-color-two);
     background-size: 75%;
     background-position: right 3em center;
     background-repeat: no-repeat;
@@ -332,11 +333,22 @@ p {
     overflow-x: hidden;
     margin-top: 3em;
 }
-.temp-box {
-    background-color: lightgray;
+.content-section {
     padding: 1em;
     height:100vh;
     width:100vw;
+}
+.content-section.one {
+    background-color: var(--bg-color-three);
+}
+.content-section.two {
+    background-color: var(--bg-color-four);
+}
+.content-section.three {
+    background-color: var(--bg-color-five);
+}
+.content-section.four {
+    background-color: var(--bg-color-six);
 }
 
 /************************************************
@@ -356,7 +368,13 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     font-weight: normal;
-    padding-top: 12px;
+    color: #FFF;
+}
+.footer a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFF;
 }
 .footer div.vertical-center {
     display:table-cell;
