@@ -5,7 +5,7 @@ import resume from "../assets/documents/erin-resume.pdf";
 class Resume extends Component {
   render() {
     return (
-      <article className="content-section four">
+      <div className="content-section four">
         <div className="main-content">
           <h2>Resume</h2>
           <div className="resume">
@@ -77,52 +77,50 @@ class Resume extends Component {
                 </article>
                 <article>
                   <p  className="resume-bold">Links</p>
-                  <div className="contact">
-                    <p className="sm"><a href="https://www.linkedin.com/in/erin-m-keller/" target="_blank">LinkedIn</a></p>
-                  </div>
+                  <p className="sm"><a href="https://www.linkedin.com/in/erin-m-keller/" target="_blank">LinkedIn</a></p>
                 </article>
                 <article>
                   <p  className="resume-bold">Skills</p>
-                  <div className="contact">
-                    <p className="sm">Interpersonal Skills</p>
-                    <p className="sm">Creativity</p>
-                    <p className="sm">Problem Solving</p>
-                    <p className="sm">Decision Making</p>
-                    <p className="sm">Computer Skills</p>
-                    <p className="sm">Effective Time Management</p>
-                    <p className="sm">Ability to Multitask</p>
-                    <p className="sm">Fast Learner</p>
-                    <p className="sm">Adaptability</p>
-                    <p className="sm">Customer Service</p>
-                    <p className="sm">Ability to Work Under Pressure</p>
-                    <p className="sm">Ability to Work in a Team,</p>
-                    <p className="sm">Communication Skills</p>
-                    <p className="sm">Microsoft Office</p>
-                    <p className="sm">Adobe Illustrator</p>
-                    <p className="sm">Adobe Photoshop</p>
-                    <p className="sm">CSS3</p>
-                    <p className="sm">HTML</p>
-                    <p className="sm">HTML &amp; CSS</p>
-                    <p className="sm">NodeJS</p>
-                    <p className="sm">HTML5</p>
-                    <p className="sm">Bootstrap</p>
-                    <p className="sm">jQuery</p>
-                    <p className="sm">CSS</p>
-                    <p className="sm">Node.js</p>
-                    <p className="sm">MySQL</p>
-                    <p className="sm">MongoDB</p>
-                    <p className="sm">Git</p>
-                    <p className="sm">React</p>
-                    <p className="sm">JavaScript</p>
-                    <p className="resume-bold">Hobbies</p>
-                    <p className="sm">Reading, playing piano, playing board games, listening to music, watching/reading true crime, watching anime, camping, backpacking, hiking, kayaking, cooking and baking.</p>
-                  </div>
+                  <p className="sm">Interpersonal Skills</p>
+                  <p className="sm">Creativity</p>
+                  <p className="sm">Problem Solving</p>
+                  <p className="sm">Decision Making</p>
+                  <p className="sm">Computer Skills</p>
+                  <p className="sm">Effective Time Management</p>
+                  <p className="sm">Ability to Multitask</p>
+                  <p className="sm">Fast Learner</p>
+                  <p className="sm">Adaptability</p>
+                  <p className="sm">Customer Service</p>
+                  <p className="sm">Ability to Work Under Pressure</p>
+                  <p className="sm">Ability to Work in a Team</p>
+                  <p className="sm">Communication Skills</p>
+                  <p className="sm">Microsoft Office</p>
+                  <p className="sm">Adobe Illustrator</p>
+                  <p className="sm">Adobe Photoshop</p>
+                  <p className="sm">CSS3</p>
+                  <p className="sm">HTML</p>
+                  <p className="sm">HTML &amp; CSS</p>
+                  <p className="sm">NodeJS</p>
+                  <p className="sm">HTML5</p>
+                  <p className="sm">Bootstrap</p>
+                  <p className="sm">jQuery</p>
+                  <p className="sm">CSS</p>
+                  <p className="sm">Node.js</p>
+                  <p className="sm">MySQL</p>
+                  <p className="sm">MongoDB</p>
+                  <p className="sm">Git</p>
+                  <p className="sm">React</p>
+                  <p className="sm">JavaScript</p>
+                </article>
+                <article>
+                  <p className="resume-bold">Hobbies</p>
+                  <p className="sm">Reading, playing piano, playing board games, listening to music, watching/reading true crime, watching anime, camping, backpacking, hiking, kayaking, cooking and baking.</p>
                 </article>
               </div>
             </div>
           </div>
         </div>
-      </article>
+      </div>
     );
   }
 }

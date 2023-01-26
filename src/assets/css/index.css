@@ -27,6 +27,7 @@
     --bg-color-three: #b7e3cc;
     --bg-color-four: #c4ffb2;
     --bg-color-five: #d6f7a3;
+    --bg-color-five-dark: #99c753;
     --bg-color-six: #FFA69E;
     --bg-color-six-dark: #e38981;
     --font-main-style: "Roboto Slab", sans-serif;
@@ -349,7 +350,7 @@ p {
 }
 
 .content-section .tag {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-main-style);
     display: inline-block;
     padding: 0.2em 0.5em 0.3em;
     -webkit-border-radius: 5px; 
@@ -441,7 +442,7 @@ p {
 }
 .content-txt,
 .content-txt h3 {
-    font-family: var(--font-sub-style);
+    font-family: var(--font-main-style);
     font-weight: normal;
 }
 .content-txt p,
@@ -449,7 +450,7 @@ p {
     padding-bottom: 0.5em;
 }
 .content-txt .card-btn {
-    font-family: var(--font-sub-style);
+    font-family: var(--font-main-style);
     display: inline-block;
     padding: 0.5em;
     -webkit-border-radius: 5px; 
@@ -468,6 +469,72 @@ p {
 
    The styles for the contact me section
 ************************************************/
+.content-section .main-content .contact-me {
+    width: 77%;
+    height: 80%;
+    padding: 3em;
+    margin: 4em auto;
+    border: 1px solid var(--bg-color-five-dark);
+    box-shadow: var(--bg-color-five-dark) 0px 4px 12px;
+    background-color: #FFF;
+}
+.contact-me label {
+    font-family: var(--font-main-style);
+    font-weight: 600;
+    display: block;
+    padding-bottom: 1em;
+}
+.contact-me input {
+    font-family: var(--font-main-style);
+    font-weight: 100;
+}
+.contact-me input#email,
+.contact-me input#name {
+    width: 100%;
+    border-bottom: 2px solid var(--bg-color-five-dark);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 3em;
+    margin-bottom: 4em;
+}
+.contact-me textarea#message {
+    width: 100%;
+    height: 10em;
+    border-bottom: 2px solid var(--bg-color-five-dark);
+    border-left: 1px dotted var(--bg-color-five-dark);
+    border-right: 1px dotted var(--bg-color-five-dark);
+    border-top: 1px dotted var(--bg-color-five-dark);
+    margin-bottom: 4em;
+}
+form .contact-btn {
+    display: inline-block;
+}
+form .contact-btn {
+    background-color: var(--bg-color-five-dark);
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all .2s;
+    width: 7em;
+}
+form .contact-btn:active,
+form .contact-btn:hover {
+  outline: 0;
+}
+form .contact-btn:hover {
+  background-color: var(--bg-color-five);
+}
+.thanks {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 3em;
+}
 
 /************************************************
    RESUME                                 @resume
@@ -614,11 +681,10 @@ p {
         padding: 16em 5em 5em 5em;
     }
 }
-
 form .resume-btn {
     display: inline-block;
 }
-.resume-btn {
+form .resume-btn {
     background-color: var(--bg-color-six-dark);
     border: 1px solid #FFF;
     border-radius: 16px;
@@ -631,11 +697,11 @@ form .resume-btn {
     transition: all .2s;
     width: 7em;
 }
-.resume-btn:active,
-.resume-btn:hover {
+form .resume-btn:active,
+form .resume-btn:hover {
   outline: 0;
 }
-.resume-btn:hover {
+form .resume-btn:hover {
   background-color: var(--bg-color-six);
 }
 
