@@ -86,7 +86,7 @@ function Main () {
             </main>
             <footer className="footer">
                 <div className="vertical-center">
-                    <h3>&copy; 2023 Erin Keller</h3>
+                    <h4>&copy; 2023 Erin Keller</h4>
                     <a href="https://www.vecteezy.com/free-png/forest">Forest PNGs by Vecteezy</a>
                 </div>
             </footer>
