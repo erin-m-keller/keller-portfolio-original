@@ -450,6 +450,7 @@ p {
     margin: 0.5em 0.1em;
     background-color: #191919;
     border: none;
+    cursor: pointer;
 }
 /************************************************
    CONTACT ME                          @contactMe
