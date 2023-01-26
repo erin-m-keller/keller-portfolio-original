@@ -28,6 +28,9 @@
     --bg-color-four: #c4ffb2;
     --bg-color-five: #d6f7a3;
     --bg-color-six: #FFA69E;
+    --bg-color-six-dark: #e38981;
+    --font-main-style: "Roboto Slab", sans-serif;
+    --font-sub-style: "Dosis", sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -43,7 +46,7 @@ body {
     flex-direction: column;
 }
 a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-sub-style);
     font-size: 14px;
     color: #000;
     text-decoration: none;
@@ -92,7 +95,6 @@ p {
    horizontal menu (desktop and mobile)
 ************************************************/
 .header {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--bg-color-three);
     color: #ffffff;
     width: 100%;
@@ -102,7 +104,7 @@ p {
     z-index: 999999;
 }
 .header-title {
-    font-family: Verdana, sans-serif;
+    font-family: var(--font-main-style);
     font-weight: normal;
     display: inline-block;
     font-size: 29px;
@@ -166,12 +168,12 @@ p {
     padding: 0.25em;
 }
 .header nav ul li a {
+    font-family: var(--font-sub-style);
     display: inline-block;
     text-decoration: none;
     color: #FFF;
     font-size: 18px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     position: relative;
     padding: 0.5em;
     cursor: pointer;
@@ -350,6 +352,8 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: inline-block;
     padding: 0.2em 0.5em 0.3em;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
     border-radius: 5px;
     color: #191919;
     font-weight: 600;
@@ -374,9 +378,11 @@ p {
     width: 100%;
 }
 .content-section h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-main-style);
     font-weight: normal;
     padding-bottom: 1em;
+    font-size: 36px;
+    font-weight: 300;
 }
 .content-section h2:before {
     content: "{";
@@ -435,7 +441,7 @@ p {
 }
 .content-txt,
 .content-txt h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-sub-style);
     font-weight: normal;
 }
 .content-txt p,
@@ -443,9 +449,11 @@ p {
     padding-bottom: 0.5em;
 }
 .content-txt .card-btn {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-sub-style);
     display: inline-block;
     padding: 0.5em;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
     border-radius: 5px;
     color: lightgray;
     font-weight: normal;
@@ -466,63 +474,169 @@ p {
 
    The styles for the resume section
 ************************************************/
-.page-wrap { 
-    width: 50%; 
-    margin: 40px auto 60px; 
+.resume { 
+    width: 77%;
+    margin: 4em auto;
+    border: 1px solid var(--bg-color-six-dark);
+    box-shadow: var(--bg-color-six-dark) 0px 4px 12px;
+    background-color: #FFF;
 }
-.page-wrap h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.resume .hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--bg-color-six-dark);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.resume h3 {
+    font-family: var(--font-sub-style);
     font-weight: normal;
-    border-bottom: 1px solid #e4857c;
-    margin: 0 0 16px 0; 
     padding: 0 0 16px 0; 
     font-size: 42px; 
     font-weight: normal;
     letter-spacing: 5px;
 }
-.page-wrap p,
-.page-wrap a { 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    font-style: italic; 
+.resume h4 {
+    padding: 0 0 16px 0; 
+    font-size: 18px; 
+}
+.resume p {
+    font-family: var(--font-main-style);
+    font-weight: 300;
     color: #191919; 
+    font-size: 16px;
+    margin-bottom: 5px;
 }
-.page-wrap strong { 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.resume p.sm,
+.resume p.sm a {
+    font-size: 14px;
+}
+.resume p span {
+    font-family: var(--font-main-style);
+    font-weight: 300;
+    color: #191919; 
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.resume a {
+    font-family: var(--font-main-style);
+    font-weight: 300;
+    color: #191919; 
+    text-decoration: underline;
     font-size: 16px;
 }
-.page-wrap dl {
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0
+.resume .resume-bold {
+    font-family: var(--font-main-style);
+    font-weight: 600;
 }
-.page-wrap dt {
-    float: left;
+.resume .resume-bold span {
+    font-family: var(--font-main-style);
+    font-weight: 300;
+}
+.resume .resume-bold a,
+.resume .resume-bold span {
+    font-family: var(--font-main-style);
+    font-weight: 300;
+}
+.resume .resume-title {
+    font-family: var(--font-main-style);
+    font-weight: 600;
+    letter-spacing: -3px;
+    display: inline-block;
     width: 50%;
-    padding: 0;
-    margin: 0
 }
-.page-wrap dd {
-    float: left;
-    width: 50%;
-    padding: 0;
-    margin: 0
+.resume .resume-title span.resume-subtitle {
+    font-family: var(--font-main-style);
+    font-weight: 100;
+    font-size: 15px;
+    display: block;
+    letter-spacing: 2px;
 }
-.page-wrap .resume-img { 
-    float: right; 
-    margin: -30px 0 0 0; 
+.resume figure { 
+    display: inline-block;
 }
-.page-wrap .objective { 
-    width: 500px; 
+.resume figure .resume-img { 
+    height: 7em;
+    width: 7em;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 2em;
+}
+.resume article {
+    padding-bottom: 1em;
+}
+.resume article div {
+    padding-bottom: 1em;
+}
+.resume .objective { 
+    width: 100%; 
     float: left; 
     margin-top: 1em;
     margin-bottom: 3em;
 }
-.page-wrap .hr {
-    width: 500px;
-    height: 1px;
-    background-color: #e4857c;
+.resume .contact {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.resume .main {
+    width: 100%;
+}
+.resume .main .sidebar {
+    background-color: #082a4d;
+}
+.resume .main .sidebar p,
+.resume .main .sidebar a {
+    color: #FFF;
+}
+.resume .main .edu-exp {
+    padding: 1em;
+}
+.resume .main .sidebar {
+    padding: 1em;
+}
+@media screen and (min-width: 600px) {
+    .resume .main .edu-exp {
+      flex: 75%;
+    }
+    .resume .main .sidebar {
+      flex: 25%;
+    }
+}
+@media screen and (min-width: 832px) {
+    .resume .main {
+        display: flex;
+    }
+    .resume .main .edu-exp {
+        padding: 5em;
+    }
+    .resume .main .sidebar {
+        padding: 16em 5em 5em 5em;
+    }
+}
+
+form .resume-btn {
+    display: inline-block;
+}
+.resume-btn {
+    background-color: var(--bg-color-six-dark);
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all .2s;
+    width: 7em;
+}
+.resume-btn:active,
+.resume-btn:hover {
+  outline: 0;
+}
+.resume-btn:hover {
+  background-color: var(--bg-color-six);
 }
 
 /************************************************
@@ -539,13 +653,13 @@ p {
     padding: 0.5em;
 }
 .footer h4 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-sub-style);
     font-size: 18px;
     font-weight: normal;
     color: #FFF;
 }
 .footer a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-sub-style);
     font-size: 14px;
     font-weight: normal;
     color: #FFF;

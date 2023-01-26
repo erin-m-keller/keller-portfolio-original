@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/keller-portfolio/static/css/main.c8fdc0df.css",
-    "main.js": "/keller-portfolio/static/js/main.616f4582.js",
+    "main.css": "/keller-portfolio/static/css/main.b7e7c0a3.css",
+    "main.js": "/keller-portfolio/static/js/main.5cf29cb9.js",
     "static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png": "/keller-portfolio/static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.84d165c3636869922c84.png",
+    "static/media/erin.jpeg": "/keller-portfolio/static/media/erin.fff23b2fd885de72bf41.jpeg",
+    "static/media/erin-resume.pdf": "/keller-portfolio/static/media/erin-resume.585f0761cddab4e39b36.pdf",
     "index.html": "/keller-portfolio/index.html",
-    "main.c8fdc0df.css.map": "/keller-portfolio/static/css/main.c8fdc0df.css.map",
-    "main.616f4582.js.map": "/keller-portfolio/static/js/main.616f4582.js.map"
+    "main.b7e7c0a3.css.map": "/keller-portfolio/static/css/main.b7e7c0a3.css.map",
+    "main.5cf29cb9.js.map": "/keller-portfolio/static/js/main.5cf29cb9.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8fdc0df.css",
-    "static/js/main.616f4582.js"
+    "static/css/main.b7e7c0a3.css",
+    "static/js/main.5cf29cb9.js"
   ]
 }
