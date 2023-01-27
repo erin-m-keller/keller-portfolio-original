@@ -9,10 +9,10 @@ class MobileMenu extends Component {
     return (
       <nav className="desktop-menu">
         <ul role="menu" aria-labelledby="menu-btn">
-            <li><Link tabIndex="1" to="about-me" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">About Me</Link></li>
-            <li><Link tabIndex="1" to="work" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Work</Link></li>
-            <li><Link tabIndex="1" to="contact" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Contact Me</Link></li>
-            <li><Link tabIndex="1" to="resume" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Resume</Link></li>
+            <li role="listitem"><Link tabIndex="1" to="about-me" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">About Me</Link></li>
+            <li role="listitem"><Link tabIndex="1" to="work" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Work</Link></li>
+            <li role="listitem"><Link tabIndex="1" to="contact" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Contact Me</Link></li>
+            <li role="listitem"><Link tabIndex="1" to="resume" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Resume</Link></li>
         </ul>
       </nav>
     );

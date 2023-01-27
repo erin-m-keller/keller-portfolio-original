@@ -41,11 +41,12 @@ function Main () {
             }
             {/* main header */}
             <header className="header">
+                <a className="skip-link" href="#main" tabIndex="1">Skip Navigation Links</a>
                 <DesktopMenu />
                 <MobileMenu setMobileMenu={setMobileMenu} showMobileMenu={showMobileMenu} />
             </header>
             {/* main content */}
-            <main className="content">
+            <main className="content" id="main">
                 <div className="hero">
                     <h1 className="header-title">Hi, I'm <span className="emphasis">Erin Keller</span>.</h1>
                 </div>

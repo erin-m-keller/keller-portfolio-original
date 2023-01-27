@@ -30,8 +30,10 @@
     --bg-color-five-dark: #99c753;
     --bg-color-six: #FFA69E;
     --bg-color-six-dark: #e38981;
-    --font-main-style: "Roboto Slab", sans-serif;
+    --font-main-style: "Roboto Slab", serif;
     --font-sub-style: "Dosis", sans-serif;
+    --font-timer-style: "Secular One", sans-serif;
+    --font-aboutme-style: "Merienda", sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -48,12 +50,12 @@ body {
 }
 a {
     font-family: var(--font-sub-style);
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #000;
     text-decoration: none;
 }
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 .clear { 
     clear: both; 
@@ -87,6 +89,19 @@ p {
     animation: fadeIn 0.25s ease-in 0s 0.7 normal forwards;
     z-index: 9999;
 }
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
 
 /************************************************
    HEADER                                @header
@@ -99,7 +114,7 @@ p {
     background-color: var(--bg-color-three);
     color: #ffffff;
     width: 100%;
-    height: 3em;
+    height: 3rem;
     position: fixed;
     top: 0;
     z-index: 999999;
@@ -108,24 +123,18 @@ p {
     font-family: var(--font-main-style);
     font-weight: normal;
     display: inline-block;
-    font-size: 29px;
+    font-size: 1.813rem;
     color: #000;
     position: absolute;
     left: auto;
     right: auto;
     margin: 0 auto;
-    top: 3.25em;
-}
-@media (min-width: 500px) {
-    .header-title {
-        font-size: 48px;
-        top: 3.25em;
-    }
+    top: 9rem;
 }
 @media (min-width: 1000px) {
     .header-title {
-        font-size: 60px;
-        top: 2em;
+        font-size: 3.75rem;
+        top: 8rem;
     }
 }
 .header nav.desktop-menu {
@@ -137,8 +146,8 @@ p {
     position: relative;
     height: 100%;
     width: 100%;
-    font-size: 20px;
-    padding: 0.5em;
+    font-size: 1.25rem;
+    padding: 0.5rem;
     background-color: var(--bg-color-one);
     border-bottom: 1px solid #FFF;
 }
@@ -146,7 +155,7 @@ p {
     list-style-type: none;
     position: absolute;
     right: 0;
-    top: 2.4em;
+    top: 2.4rem;
     background-color: #f9f9f9;
     width: 100%;
     height: 0px;
@@ -155,8 +164,9 @@ p {
     height: 0px;
 }
 .header nav.mobile-menu ul.active {
-    height: 11em;
+    height: 16rem;
     transition: height .3s ease;
+    padding: 1rem;
 }
 .header nav.mobile-menu ul.inactive {
     height: 0px;
@@ -166,17 +176,17 @@ p {
 .header nav.mobile-menu ul li {
     display: block;
     margin-left: 25px;
-    padding: 0.25em;
+    padding: 0.25rem;
 }
 .header nav ul li a {
     font-family: var(--font-sub-style);
     display: inline-block;
     text-decoration: none;
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 2px;
     position: relative;
-    padding: 0.5em;
+    padding: 0.5rem;
     cursor: pointer;
 }
 .header nav.mobile-menu ul li a {
@@ -211,28 +221,28 @@ p {
 }
 #menu-btn {
     position: absolute;
-    right: 1em;
+    right: 1rem;
     top: 0px;
-    height: 3em;
-    width: 3em;
+    height: 3rem;
+    width: 3rem;
 }
 #menu-btn .bar-one {
     position: absolute;
-    right: 0.5em;
+    right: 0.5rem;
     top: 0;
 }
 #menu-btn .bar-two {
     position: absolute;
-    right: 0.5em;
-    top: 0.75em;
+    right: 0.5rem;
+    top: 0.75rem;
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.5s linear;
 }
 #menu-btn .bar-three {
     position: absolute;
-    right: 0.5em;
-    top: 1.5em;
+    right: 0.5rem;
+    top: 1.5rem;
 }
 #menu-btn.active .bar-one {
     transform: rotate(-45deg);
@@ -244,7 +254,7 @@ p {
 }
 #menu-btn.active .bar-three {
     transform: rotate(45deg);
-    top: 1.7em;
+    top: 1.55rem;
 }
 @media (min-width: 600px) {
     .header nav.desktop-menu {
@@ -257,7 +267,7 @@ p {
         height: 100%;
         margin-right: 20px;
         width: 100%;
-        font-size: 20px;
+        font-size: 1.25rem;
         background-color: var(--bg-color-one);
         border-bottom: 1px solid #FFF;
     }
@@ -282,12 +292,17 @@ p {
     content: "";
     position: absolute;
     height: 2px;
-    background-color: var(--bg-color-four);
+    background-color: var(--bg-color-one);
     width: 0;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+@media (min-width: 600px) {
+    .header nav ul li a::after {
+        background-color: var(--bg-color-four);
+    }
 }
 .header nav ul li a:hover {
     color: var(--bg-color-four);
@@ -299,12 +314,12 @@ p {
     end animation css 
 *************************/
 .hero {    
-    padding: 1em;
+    padding: 1rem;
     height:100vh;
     width:100vw;
     background: url('../images/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png'), var(--bg-color-two);
     background-size: 75%;
-    background-position: right 3em center;
+    background-position: right 3rem center;
     background-repeat: no-repeat;
 }
 .hero .emphasis {
@@ -316,7 +331,7 @@ p {
     position: absolute;
     left: 2%;
     bottom: 9px;
-    width: 5.15em;
+    width: 5.15rem;
     height: 5px;
     background: var(--bg-color-one);
     z-index: 2;
@@ -341,7 +356,7 @@ p {
     flex-grow: 1;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-top: 3em;
+    margin-top: 3rem;
 }
 .content-section {
     min-height: 100vh;
@@ -352,17 +367,17 @@ p {
 .content-section .tag {
     font-family: var(--font-main-style);
     display: inline-block;
-    padding: 0.2em 0.5em 0.3em;
+    padding: 0.2rem 0.5rem 0.3rem;
     -webkit-border-radius: 5px; 
     -moz-border-radius: 5px;
     border-radius: 5px;
     color: #191919;
     font-weight: 600;
-    margin: 0.5em 0.1em;
+    margin: 0.5rem 0.1rem;
     background-color: #85cb6f;
 }
 .content-section .tag-sm {
-    font-size: .7em;
+    font-size: .75rem;
     display: inline-block;
     letter-spacing: .15ch;
     font-weight: 400
@@ -370,30 +385,29 @@ p {
 
 .content-section .content-title {
     width: 100%;
-    padding: 1em 0.25em 0.25em 0.25em;
+    padding: 1rem 0.25rem 0.25rem 0.25rem;
     display: block;
 }
 .content-section .main-content {
     flex: 1;
-    padding: 1em;
     width: 100%;
 }
 .content-section h2 {
     font-family: var(--font-main-style);
     font-weight: normal;
-    padding-bottom: 1em;
-    font-size: 36px;
+    padding-bottom: 1rem;
+    font-size: 2.25rem;
     font-weight: 300;
 }
 .content-section h2:before {
     content: "{";
-    font-size: 42px;
-    padding-right: 0.5em;
+    font-size: 2.625rem;
+    padding-right: 0.5rem;
 }
 .content-section h2:after {
     content: "}";
-    font-size: 42px;
-    padding-left: 0.5em;
+    font-size: 2.625rem;
+    padding-left: 0.5rem;
 }
 .content-section.one {
     background-color: var(--bg-color-three);
@@ -413,18 +427,109 @@ p {
 
    The styles for the about me section
 ************************************************/
+.about-me h2 {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.about-me .timer {
+    font-family: var(--font-timer-style);    
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.75);
+}
+.about-me .timer p {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--bg-color-five);
+    -webkit-text-stroke: 1px #000; 
+}
+/************************************************
+   The following animation was 
+   modified from: 
+   https://codepen.io/alvarotrigo/pen/PoKMyNO
+   (@alvarotrigo) 
+*************************************************/
+@keyframes movingBackground {
+    0%   { background-position: 0% center; }
+    25%  { background-position: 50% center; }
+    50%  { background-position: 100% center; }
+    75%  { background-position: 150% center; }
+    100% { background-position: 200% center; }
+  }
+.about-me .timer span {
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #e4fac1 0%, var(--bg-color-five-dark) 50%, var(--bg-color-five) 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: movingBackground 3s linear infinite;
+    display: inline-block;
+    font-size: 32px;
+}
+/*************************
+    end animation css 
+*************************/
+.about-me .timer .flex-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.about-me .timer .flex-columns .col {
+    flex: 100%;
+    text-align: center;
+}
+@media (min-width: 800px) {
+    .about-me .timer .flex-columns .col {
+        flex: 25%;
+    }
+}
+.aboutme-section {
+    width: 77%;
+    height: 80%;
+    padding: 3rem;
+    margin: 4rem auto;
+    border: 1px solid var(--bg-color-five-dark);
+    -moz-box-shadow: var(--bg-color-five-dark) 0px 4px 12px; 
+    -webkit-box-shadow: var(--bg-color-five-dark) 0px 4px 12px; 
+    box-shadow: var(--bg-color-five-dark) 0px 4px 12px;
+    background-color: #FFF;
+}
+.aboutme-section p {
+    font-family: var(--font-main-style);
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 45px;
+}
+.aboutme-section strong {
+    font-family: var(--font-main-style);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 45px;
+    display: inline;
+    padding: 0.25em 0;
+    background: #000;
+    color: #ffffff;
+    -moz-box-shadow: 0.15em 0 0 #000, -0.15em 0 0 #000; 
+    -webkit-box-shadow: 0.15em 0 0 #000, -0.15em 0 0 #000; 
+    box-shadow: 0.15em 0 0 #000, -0.15em 0 0 #000;
+}
 
 /************************************************
    WORK                                     @work
 
    The styles for the work section
 ************************************************/
-.card-list { 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+.content-section .main-content .work {
+    padding: 1rem;
 }
 .card-list article {
+    margin-bottom: 1rem;
     border: 5px solid #a7e794;
     background-color: #a8e794;
 }
@@ -434,11 +539,8 @@ p {
 .card-list article img {
     max-width: 100%;
 }
-.card-list article:nth-child(1) {
-    grid-column: span 2;
-}
 .content-txt {
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 .content-txt,
 .content-txt h3 {
@@ -447,65 +549,85 @@ p {
 }
 .content-txt p,
 .content-txt h3 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
 }
 .content-txt .card-btn {
     font-family: var(--font-main-style);
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.5rem;
     -webkit-border-radius: 5px; 
     -moz-border-radius: 5px;
     border-radius: 5px;
     color: lightgray;
     font-weight: normal;
-    font-size: 16px;
-    margin: 0.5em 0.1em;
+    font-size: 1rem;
+    margin: 0.5rem 0.1rem;
     background-color: #191919;
     border: none;
     cursor: pointer;
 }
+@media (min-width:600px) {
+    .card-list { 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+    .card-list article:nth-child(1) {
+        grid-column: span 2;
+    }
+    .card-list article {
+        margin-bottom: 0;
+    }
+}
+
 /************************************************
    CONTACT ME                          @contactMe
 
    The styles for the contact me section
 ************************************************/
 .content-section .main-content .contact-me {
-    width: 77%;
+    padding: 1rem;
+}
+.contact-form {
+    width: 90%;
     height: 80%;
-    padding: 3em;
-    margin: 4em auto;
+    padding: 1rem;
+    margin: 1rem auto;
     border: 1px solid var(--bg-color-five-dark);
+    -moz-box-shadow: var(--bg-color-five-dark) 0px 4px 12px; 
+    -webkit-box-shadow: var(--bg-color-five-dark) 0px 4px 12px; 
     box-shadow: var(--bg-color-five-dark) 0px 4px 12px;
     background-color: #FFF;
 }
-.contact-me label {
+.contact-form label {
     font-family: var(--font-main-style);
     font-weight: 600;
     display: block;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
-.contact-me input {
+.contact-form input {
     font-family: var(--font-main-style);
     font-weight: 100;
 }
-.contact-me input#email,
-.contact-me input#name {
+.contact-form input#email,
+.contact-form input#name {
     width: 100%;
     border-bottom: 2px solid var(--bg-color-five-dark);
     border-left: none;
     border-right: none;
     border-top: none;
-    height: 3em;
-    margin-bottom: 4em;
+    height: 3rem;
+    margin-bottom: 4rem;
 }
-.contact-me textarea#message {
+.contact-form textarea#message {
     width: 100%;
-    height: 10em;
+    height: 10rem;
     border-bottom: 2px solid var(--bg-color-five-dark);
     border-left: 1px dotted var(--bg-color-five-dark);
     border-right: 1px dotted var(--bg-color-five-dark);
     border-top: 1px dotted var(--bg-color-five-dark);
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
 }
 form .contact-btn {
     display: inline-block;
@@ -517,11 +639,11 @@ form .contact-btn {
     box-sizing: border-box;
     color: #000000;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 5px;
     text-decoration: none;
     transition: all .2s;
-    width: 7em;
+    width: 7rem;
 }
 form .contact-btn:active,
 form .contact-btn:hover {
@@ -532,8 +654,15 @@ form .contact-btn:hover {
 }
 .thanks {
     text-align: center;
-    font-size: 5em;
-    margin-top: 3em;
+    font-size: 5rem;
+    margin-top: 3rem;
+}
+@media (min-width:600px) {
+    .contact-form {
+        width: 77%;
+        padding: 3rem;
+        margin: 4rem auto;
+    }
 }
 
 /************************************************
@@ -541,144 +670,155 @@ form .contact-btn:hover {
 
    The styles for the resume section
 ************************************************/
-.resume { 
-    width: 77%;
-    margin: 4em auto;
+.content-section .main-content .resume {
+    padding: 1rem;
+}
+.resume-form { 
+    width: 90%;
+    margin: 1rem auto;
     border: 1px solid var(--bg-color-six-dark);
+    -moz-box-shadow: var(--bg-color-six-dark) 0px 4px 12px;
+    -webkit-box-shadow: var(--bg-color-six-dark) 0px 4px 12px;
     box-shadow: var(--bg-color-six-dark) 0px 4px 12px;
     background-color: #FFF;
 }
-.resume .hr {
+.resume-form .hr {
     width: 100%;
     height: 1px;
     background-color: var(--bg-color-six-dark);
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.resume h3 {
+.resume-form h3 {
     font-family: var(--font-sub-style);
     font-weight: normal;
     padding: 0 0 16px 0; 
-    font-size: 42px; 
+    font-size: 2.625rem; 
     font-weight: normal;
     letter-spacing: 5px;
 }
-.resume h4 {
+.resume-form h4 {
     padding: 0 0 16px 0; 
-    font-size: 18px; 
+    font-size: 1.125rem; 
 }
-.resume p {
+.resume-form p {
     font-family: var(--font-main-style);
     font-weight: 300;
     color: #191919; 
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 5px;
+    line-height: 1.5;
 }
-.resume p.sm,
-.resume p.sm a {
-    font-size: 14px;
+.resume-form p.sm,
+.resume-form p.sm a {
+    font-size: 0.875rem;
 }
-.resume p span {
+.resume-form p span {
     font-family: var(--font-main-style);
     font-weight: 300;
     color: #191919; 
     display: block;
-    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.5;
     margin-bottom: 5px;
 }
-.resume a {
+.resume-form a {
     font-family: var(--font-main-style);
     font-weight: 300;
     color: #191919; 
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 1rem;
 }
-.resume .resume-bold {
+.resume-form .resume-bold {
     font-family: var(--font-main-style);
     font-weight: 600;
 }
-.resume .resume-bold span {
+.resume-form .resume-bold span {
     font-family: var(--font-main-style);
     font-weight: 300;
 }
-.resume .resume-bold a,
-.resume .resume-bold span {
+.resume-form .resume-bold a,
+.resume-form .resume-bold span {
     font-family: var(--font-main-style);
     font-weight: 300;
 }
-.resume .resume-title {
+.resume-form .resume-title {
     font-family: var(--font-main-style);
     font-weight: 600;
     letter-spacing: -3px;
     display: inline-block;
     width: 50%;
 }
-.resume .resume-title span.resume-subtitle {
+.resume-form .resume-title span.resume-subtitle {
     font-family: var(--font-main-style);
     font-weight: 100;
-    font-size: 15px;
+    font-size: 0.938rem;
     display: block;
     letter-spacing: 2px;
 }
-.resume figure { 
+.resume-form figure { 
     display: inline-block;
 }
-.resume figure .resume-img { 
-    height: 7em;
-    width: 7em;
+.resume-form figure .resume-img { 
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     border: 1px solid #000;
-    margin-right: 2em;
+    margin-right: 2rem;
 }
-.resume article {
-    padding-bottom: 1em;
+.resume-form article {
+    padding-bottom: 1rem;
 }
-.resume article div {
-    padding-bottom: 1em;
+.resume-form article div {
+    padding-bottom: 1rem;
 }
-.resume .objective { 
+.resume-form .objective { 
     width: 100%; 
     float: left; 
-    margin-top: 1em;
-    margin-bottom: 3em;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
-.resume .contact {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+.resume-form .contact {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
-.resume .main {
+.resume-form .main {
     width: 100%;
 }
-.resume .main .sidebar {
+.resume-form .main .sidebar {
     background-color: #082a4d;
 }
-.resume .main .sidebar p,
-.resume .main .sidebar a {
+.resume-form .main .sidebar p,
+.resume-form .main .sidebar a {
     color: #FFF;
 }
-.resume .main .edu-exp {
-    padding: 1em;
+.resume-form .main .edu-exp {
+    padding: 1rem;
 }
-.resume .main .sidebar {
-    padding: 1em;
+.resume-form .main .sidebar {
+    padding: 1rem;
 }
 @media screen and (min-width: 600px) {
-    .resume .main .edu-exp {
+    .resume-form { 
+        width: 77%;
+        margin: 4rem auto;
+    }
+    .resume-form .main .edu-exp {
       flex: 75%;
     }
-    .resume .main .sidebar {
+    .resume-form .main .sidebar {
       flex: 25%;
     }
 }
 @media screen and (min-width: 832px) {
-    .resume .main {
+    .resume-form .main {
         display: flex;
     }
-    .resume .main .edu-exp {
-        padding: 5em;
+    .resume-form .main .edu-exp {
+        padding: 5rem;
     }
-    .resume .main .sidebar {
-        padding: 16em 5em 5em 5em;
+    .resume-form .main .sidebar {
+        padding: 16rem 5rem 5rem 5rem;
     }
 }
 form .resume-btn {
@@ -691,11 +831,11 @@ form .resume-btn {
     box-sizing: border-box;
     color: #000000;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 5px;
     text-decoration: none;
     transition: all .2s;
-    width: 7em;
+    width: 7rem;
 }
 form .resume-btn:active,
 form .resume-btn:hover {
@@ -703,6 +843,20 @@ form .resume-btn:hover {
 }
 form .resume-btn:hover {
   background-color: var(--bg-color-six);
+}
+.resume-list li {
+    font-family: var(--font-main-style);
+    font-weight: 300;
+    color: #191919;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+.resume-list {
+    margin-left: 13px;
+}
+.resume-list li.sm {
+    font-size: 0.875rem;
 }
 
 /************************************************
@@ -712,21 +866,21 @@ form .resume-btn:hover {
 ************************************************/
 .footer {
     text-align: center;
-    height: 3em;
+    height: 3rem;
     width: 100%;
     background-color: var(--bg-color-one);
     display: table;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 .footer h4 {
     font-family: var(--font-sub-style);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: normal;
     color: #FFF;
 }
 .footer a {
     font-family: var(--font-sub-style);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
     color: #FFF;
 }
