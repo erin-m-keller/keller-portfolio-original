@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import placeholder from "../assets/images/placeholder.png";
 import Card from "../components/Card";
 import portfolioScreenshot from "../assets/images/portfolio-screenshot.png";
+import recipeAppScreenshot from "../assets/images/recipe-app-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -17,12 +18,12 @@ class Work extends Component {
                     alt="Screenshot of Erin Keller's web portfolio"
                     title="React Portfolio"
                     tags={["#react","#javascript","#html","#css"]} />
-              <Card cardUrl=""
-                    btnUrl=""
-                    src={placeholder}
-                    alt="Sample photo"
-                    title="Sample Heading"
-                    tags={["#react","#javascript","#html","#css"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/recipe-app/#/"
+                    btnUrl="https://github.com/erin-m-keller/recipe-app"
+                    src={recipeAppScreenshot}
+                    alt="Recipe Grocery List Search Engine"
+                    title="Recipe Grocery List Search Engine"
+                    tags={["#react","#javascript","#html","#css", "#edamam api"]} />
               <Card cardUrl=""
                     btnUrl=""
                     src={placeholder}

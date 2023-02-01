@@ -32,6 +32,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Screenshot
 
+![HoriseonScreen](./src/assets/images/portfolio-screenshot.png)
+
 ## Deployed page
 
 Page published at: [https://erin-m-keller.github.io/keller-portfolio/](https://erin-m-keller.github.io/keller-portfolio/)

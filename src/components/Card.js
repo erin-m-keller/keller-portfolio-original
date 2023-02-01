@@ -19,9 +19,11 @@ class Card extends Component {
           <form action={btnUrl} target="_blank">
               <input type="submit" value="Visit repository" className="card-btn" />
           </form>
-          {tags.map((tag,id) => (
-            <span className="tag tag-sm" key={id}>{tag}</span>
-          ))}
+          <div className="tag-container">
+            {tags.map((tag,id) => (
+              <span className="tag tag-sm" key={id}>{tag}</span>
+            ))}
+          </div>
         </div>
       </article>
     );
