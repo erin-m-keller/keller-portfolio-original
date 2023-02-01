@@ -542,6 +542,9 @@ p {
 .card-list article img {
     max-width: 100%;
 }
+.card-list article img.fixed {
+    height: 11em;
+}
 .content-txt {
     padding: 0.5rem;
 }

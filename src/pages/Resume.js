@@ -33,7 +33,7 @@ class Resume extends Component {
                       <ul className="resume-list">
                         <li className="sm">Worked in an agile environment with weekly stand-ups, tracked issues in Jira, and conducted sprint planning and retrospectives every two weeks.</li>
                         <li className="sm">Rebuilt 5-year-old PHP application in React with full user experience redesign (Leadership Academy).</li>
-                        <li className="sm">Rewrote HTML to meet industry standards and Accessibility compliance.</li>
+                        <li className="sm">Refactored legacy HTML to meet industry standards and Accessibility compliance.</li>
                         <li className="sm">Utilized HTML, CSS, and JavaScript to create 100+ responsive pages for leadership, management and executive development.</li>
                         <li className="sm">Produced and assisted in the deployment of 10+ various web applications for our HR clients.</li>
                       </ul>

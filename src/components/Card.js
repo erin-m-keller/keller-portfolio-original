@@ -8,10 +8,11 @@ class Card extends Component {
     let imgAlt = this.props.alt;
     let title = this.props.title;
     let tags = this.props.tags;
+    let imgClass = this.props.imgClass;
     return (
       <article>
         <a href={cardUrl} target="_blank">
-          <img src={imgSrc} alt={imgAlt} />
+          <img src={imgSrc} alt={imgAlt} className={imgClass} />
         </a>
         <div className="content-txt">
           <h3>{title}</h3>
