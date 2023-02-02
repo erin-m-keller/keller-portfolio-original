@@ -3,6 +3,7 @@ import placeholder from "../assets/images/placeholder.png";
 import Card from "../components/Card";
 import portfolioScreenshot from "../assets/images/portfolio-screenshot.png";
 import recipeAppScreenshot from "../assets/images/recipe-app-screenshot.png";
+import lastFmScreenshot from "../assets/images/lastfm-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -25,13 +26,13 @@ class Work extends Component {
                     title="Recipe Grocery List Search Engine"
                     imgClass="fixed"
                     tags={["#react","#javascript","#html","#css", "#edamam api"]} />
-              <Card cardUrl=""
-                    btnUrl=""
-                    src={placeholder}
-                    alt="Sample photo"
-                    title="Sample Heading"
+              <Card cardUrl="https://erin-m-keller.github.io/lastfm-app/#/"
+                    btnUrl="https://github.com/erin-m-keller/lastfm-app"
+                    src={lastFmScreenshot}
+                    alt="LastFM Music Artist Search Engine"
+                    title="LastFM Music Artist Search Engine"
                     imgClass="fixed"
-                    tags={["#react","#javascript","#html","#css"]} />
+                    tags={["#react","#javascript","#html","#css", "#lastfm api"]} />
               <Card cardUrl=""
                     btnUrl=""
                     src={placeholder}

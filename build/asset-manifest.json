@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/keller-portfolio/static/css/main.c41b5f9e.css",
-    "main.js": "/keller-portfolio/static/js/main.54df0859.js",
+    "main.js": "/keller-portfolio/static/js/main.7538ea7e.js",
     "static/media/recipe-app-screenshot.png": "/keller-portfolio/static/media/recipe-app-screenshot.b1130970e3bf5188391f.png",
     "static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png": "/keller-portfolio/static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.84d165c3636869922c84.png",
     "static/media/portfolio-screenshot.png": "/keller-portfolio/static/media/portfolio-screenshot.0391da2e40bbf0dcc637.png",
+    "static/media/lastfm-screenshot.png": "/keller-portfolio/static/media/lastfm-screenshot.053c052d9e90e8222441.png",
     "static/media/erin.jpeg": "/keller-portfolio/static/media/erin.fff23b2fd885de72bf41.jpeg",
     "static/media/erin-resume.pdf": "/keller-portfolio/static/media/erin-resume.10e3ab1aef142f77cc3d.pdf",
     "index.html": "/keller-portfolio/index.html",
     "main.c41b5f9e.css.map": "/keller-portfolio/static/css/main.c41b5f9e.css.map",
-    "main.54df0859.js.map": "/keller-portfolio/static/js/main.54df0859.js.map"
+    "main.7538ea7e.js.map": "/keller-portfolio/static/js/main.7538ea7e.js.map"
   },
   "entrypoints": [
     "static/css/main.c41b5f9e.css",
-    "static/js/main.54df0859.js"
+    "static/js/main.7538ea7e.js"
   ]
 }
