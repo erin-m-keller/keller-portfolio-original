@@ -122,7 +122,6 @@ class Resume extends Component {
                     <p className="sm">CSS3</p>
                     <p className="sm">HTML</p>
                     <p className="sm">HTML &amp; CSS</p>
-                    <p className="sm">NodeJS</p>
                     <p className="sm">HTML5</p>
                     <p className="sm">Bootstrap</p>
                     <p className="sm">jQuery</p>
