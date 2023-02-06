@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/keller-portfolio/static/css/main.904921a4.css",
+    "main.css": "/keller-portfolio/static/css/main.a8d11dea.css",
     "main.js": "/keller-portfolio/static/js/main.3103f380.js",
     "static/media/recipe-app-screenshot.png": "/keller-portfolio/static/media/recipe-app-screenshot.b1130970e3bf5188391f.png",
     "static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png": "/keller-portfolio/static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.84d165c3636869922c84.png",
@@ -10,11 +10,11 @@
     "static/media/erin.jpeg": "/keller-portfolio/static/media/erin.fff23b2fd885de72bf41.jpeg",
     "static/media/erin-resume.pdf": "/keller-portfolio/static/media/erin-resume.10e3ab1aef142f77cc3d.pdf",
     "index.html": "/keller-portfolio/index.html",
-    "main.904921a4.css.map": "/keller-portfolio/static/css/main.904921a4.css.map",
+    "main.a8d11dea.css.map": "/keller-portfolio/static/css/main.a8d11dea.css.map",
     "main.3103f380.js.map": "/keller-portfolio/static/js/main.3103f380.js.map"
   },
   "entrypoints": [
-    "static/css/main.904921a4.css",
+    "static/css/main.a8d11dea.css",
     "static/js/main.3103f380.js"
   ]
 }
