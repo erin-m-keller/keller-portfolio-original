@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import portfolioScreenshot from "../assets/images/portfolio-screenshot.png";
 import recipeAppScreenshot from "../assets/images/recipe-app-screenshot.png";
 import lastFmScreenshot from "../assets/images/lastfm-screenshot.png";
+import pwdScreenshot from "../assets/images/password-generator-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -33,13 +34,13 @@ class Work extends Component {
                     title="LastFM Music Artist Search Engine"
                     imgClass="fixed"
                     tags={["#react","#javascript","#html","#css", "#lastfm api"]} />
-              <Card cardUrl=""
-                    btnUrl=""
-                    src={placeholder}
-                    alt="Sample photo"
-                    title="Sample Heading"
+              <Card cardUrl="https://erin-m-keller.github.io/password-generator/"
+                    btnUrl="https://github.com/erin-m-keller/password-generator"
+                    src={pwdScreenshot}
+                    alt="Password Generator"
+                    title="Password Generator"
                     imgClass="fixed"
-                    tags={["#react","#javascript","#html","#css"]} />
+                    tags={["#javascript","#html","#css"]} />
               <Card cardUrl=""
                     btnUrl=""
                     src={placeholder}
