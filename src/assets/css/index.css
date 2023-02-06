@@ -493,7 +493,7 @@ p {
     }
 }
 .aboutme-section {
-    width: 77%;
+    width: 90%;
     height: 80%;
     padding: 3rem;
     margin: 4rem auto;
@@ -502,6 +502,11 @@ p {
     -webkit-box-shadow: var(--bg-color-five-dark) 0px 4px 12px; 
     box-shadow: var(--bg-color-five-dark) 0px 4px 12px;
     background-color: #FFF;
+}
+@media (min-width: 800px) {
+    .aboutme-section {
+        width: 77%;
+    }
 }
 .aboutme-section p {
     font-family: var(--font-main-style);
@@ -538,12 +543,11 @@ p {
 }
 .card-list article a {
     position: relative;
+    width: 100%;
+    display: block;
 }
 .card-list article img {
-    max-width: 100%;
-}
-.card-list article img.fixed {
-    height: 11em;
+    width: 100%;
 }
 .content-txt {
     padding: 0.5rem;
@@ -576,6 +580,8 @@ p {
 @media (min-width:600px) {
     .card-list { 
         display: grid;
+        width: 90%;
+        margin: 1rem auto;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 20px;
     }
@@ -605,6 +611,11 @@ p {
     -webkit-box-shadow: var(--bg-color-five-dark) 0px 4px 12px; 
     box-shadow: var(--bg-color-five-dark) 0px 4px 12px;
     background-color: #FFF;
+}
+@media (min-width: 800px) {
+    .contact-form {
+        width: 77%;
+    }
 }
 .contact-form label {
     font-family: var(--font-main-style);
@@ -687,6 +698,11 @@ form .contact-btn:hover {
     -webkit-box-shadow: var(--bg-color-six-dark) 0px 4px 12px;
     box-shadow: var(--bg-color-six-dark) 0px 4px 12px;
     background-color: #FFF;
+}
+@media (min-width: 800px) {
+    .resume-form { 
+        width: 77%;
+    }
 }
 .resume-form .hr {
     width: 100%;
