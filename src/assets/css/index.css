@@ -131,7 +131,7 @@ p {
     margin: 0 auto;
     top: 9rem;
 }
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .header-title {
         font-size: 3.75rem;
         top: 8rem;
@@ -256,7 +256,7 @@ p {
     transform: rotate(45deg);
     top: 1.55rem;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .header nav.desktop-menu {
         display: block;
     }
@@ -299,7 +299,7 @@ p {
     transform: translateX(-50%);
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .header nav ul li a::after {
         background-color: var(--bg-color-four);
     }
@@ -336,12 +336,12 @@ p {
     background: var(--bg-color-one);
     z-index: 2;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .hero {    
         background-size: 50%;
     }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
     .hero {    
         background-size: 35%;
     }
@@ -487,7 +487,7 @@ p {
     flex: 100%;
     text-align: center;
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .about-me .timer .flex-columns .col {
         flex: 25%;
     }
@@ -503,7 +503,7 @@ p {
     box-shadow: var(--bg-color-five-dark) 0px 4px 12px;
     background-color: #FFF;
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .aboutme-section {
         width: 77%;
     }
@@ -577,7 +577,7 @@ p {
     border: none;
     cursor: pointer;
 }
-@media (min-width:600px) {
+@media screen and (min-width:600px) {
     .card-list { 
         display: grid;
         width: 90%;
@@ -612,7 +612,7 @@ p {
     box-shadow: var(--bg-color-five-dark) 0px 4px 12px;
     background-color: #FFF;
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .contact-form {
         width: 77%;
     }
@@ -674,7 +674,7 @@ form .contact-btn:hover {
     font-size: 5rem;
     margin-top: 3rem;
 }
-@media (min-width:600px) {
+@media screen and (min-width:600px) {
     .contact-form {
         width: 77%;
         padding: 3rem;
@@ -699,7 +699,7 @@ form .contact-btn:hover {
     box-shadow: var(--bg-color-six-dark) 0px 4px 12px;
     background-color: #FFF;
 }
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .resume-form { 
         width: 77%;
     }
