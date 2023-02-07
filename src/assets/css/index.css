@@ -570,17 +570,19 @@ p {
 }
 @media screen and (min-width:600px) {
     .card-list { 
-        display: grid;
-        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
         margin: 1rem auto;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 20px;
+        gap: 1rem;
     }
     .card-list article:nth-child(1) {
-        grid-column: span 2;
+        flex: 0 0 40%;
     }
     .card-list article {
         margin-bottom: 0;
+        flex: 0 0 18%;
     }
 }
 
