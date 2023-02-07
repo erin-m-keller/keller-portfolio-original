@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/keller-portfolio/static/css/main.b586ec1a.css",
-    "main.js": "/keller-portfolio/static/js/main.ede1a049.js",
+    "main.js": "/keller-portfolio/static/js/main.c96cdb7f.js",
     "static/media/recipe-app-screenshot.png": "/keller-portfolio/static/media/recipe-app-screenshot.b1130970e3bf5188391f.png",
+    "static/media/react-calculator-screenshot.png": "/keller-portfolio/static/media/react-calculator-screenshot.6b28802bfdeecca809af.png",
     "static/media/portfolio-screenshot.png": "/keller-portfolio/static/media/portfolio-screenshot.8e90da7e278d573e81c1.png",
     "static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png": "/keller-portfolio/static/media/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.84d165c3636869922c84.png",
     "static/media/password-generator-screenshot.png": "/keller-portfolio/static/media/password-generator-screenshot.442d27c0ea98553604c8.png",
@@ -11,10 +12,10 @@
     "static/media/erin-resume.pdf": "/keller-portfolio/static/media/erin-resume.10e3ab1aef142f77cc3d.pdf",
     "index.html": "/keller-portfolio/index.html",
     "main.b586ec1a.css.map": "/keller-portfolio/static/css/main.b586ec1a.css.map",
-    "main.ede1a049.js.map": "/keller-portfolio/static/js/main.ede1a049.js.map"
+    "main.c96cdb7f.js.map": "/keller-portfolio/static/js/main.c96cdb7f.js.map"
   },
   "entrypoints": [
     "static/css/main.b586ec1a.css",
-    "static/js/main.ede1a049.js"
+    "static/js/main.c96cdb7f.js"
   ]
 }
