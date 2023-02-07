@@ -573,9 +573,10 @@ p {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         margin: 1rem auto;
-        gap: 1rem;
+        gap: 17px;
     }
     .card-list article:nth-child(1) {
         flex: 0 0 40%;

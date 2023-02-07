@@ -14,12 +14,12 @@ class Work extends Component {
           <div className="work">
             <h2>Work</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
-              <Card cardUrl="https://erin-m-keller.github.io/keller-portfolio/#/"
-                    btnUrl="https://github.com/erin-m-keller/keller-portfolio"
-                    src={portfolioScreenshot}
-                    alt="Screenshot of Erin Keller's web portfolio"
-                    title="React Portfolio"
-                    tags={["#react","#javascript","#html","#css"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/password-generator/"
+                    btnUrl="https://github.com/erin-m-keller/password-generator"
+                    src={pwdScreenshot}
+                    alt="Password Generator"
+                    title="Password Generator"
+                    tags={["#javascript","#html","#css"]} />
               <Card cardUrl="https://erin-m-keller.github.io/recipe-app/#/"
                     btnUrl="https://github.com/erin-m-keller/recipe-app"
                     src={recipeAppScreenshot}
@@ -32,12 +32,12 @@ class Work extends Component {
                     alt="LastFM Music Artist Search Engine"
                     title="LastFM Music Artist Search Engine"
                     tags={["#react","#javascript","#html","#css", "#lastfm api"]} />
-              <Card cardUrl="https://erin-m-keller.github.io/password-generator/"
-                    btnUrl="https://github.com/erin-m-keller/password-generator"
-                    src={pwdScreenshot}
-                    alt="Password Generator"
-                    title="Password Generator"
-                    tags={["#javascript","#html","#css"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/keller-portfolio/#/"
+                    btnUrl="https://github.com/erin-m-keller/keller-portfolio"
+                    src={portfolioScreenshot}
+                    alt="Screenshot of Erin Keller's web portfolio"
+                    title="React Portfolio"
+                    tags={["#react","#javascript","#html","#css"]} />
               <Card cardUrl=""
                     btnUrl=""
                     src={placeholder}
