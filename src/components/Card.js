@@ -17,7 +17,7 @@ class Card extends Component {
           <h3>{title}</h3>
           <p>Click the image above to view the site &mdash; or &mdash; click the button below to view the repository.</p>
           <form action={btnUrl} target="_blank">
-              <input type="submit" value="Visit repository" className="card-btn" />
+              <input type="submit" value="View repository" className="card-btn" />
           </form>
           <div className="tag-container">
             {tags.map((tag,id) => (

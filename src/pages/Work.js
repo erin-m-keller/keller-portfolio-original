@@ -5,6 +5,7 @@ import portfolioScreenshot from "../assets/images/portfolio-screenshot.png";
 import recipeAppScreenshot from "../assets/images/recipe-app-screenshot.png";
 import lastFmScreenshot from "../assets/images/lastfm-screenshot.png";
 import pwdScreenshot from "../assets/images/password-generator-screenshot.png";
+import reactCalcScreenshot from "../assets/images/react-calculator-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -14,6 +15,12 @@ class Work extends Component {
           <div className="work">
             <h2>Work</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+              <Card cardUrl="https://erin-m-keller.github.io/react-calculator/"
+                    btnUrl="https://github.com/erin-m-keller/react-calculator"
+                    src={reactCalcScreenshot}
+                    alt="Screenshot of React Powered Calculator App"
+                    title="React Powered Calculator"
+                    tags={["#react","#javascript","#html","#css"]} />
               <Card cardUrl="https://erin-m-keller.github.io/password-generator/"
                     btnUrl="https://github.com/erin-m-keller/password-generator"
                     src={pwdScreenshot}
@@ -32,12 +39,6 @@ class Work extends Component {
                     alt="LastFM Music Artist Search Engine"
                     title="LastFM Music Artist Search Engine"
                     tags={["#react","#javascript","#html","#css", "#lastfm api"]} />
-              <Card cardUrl="https://erin-m-keller.github.io/keller-portfolio/#/"
-                    btnUrl="https://github.com/erin-m-keller/keller-portfolio"
-                    src={portfolioScreenshot}
-                    alt="Screenshot of Erin Keller's web portfolio"
-                    title="React Portfolio"
-                    tags={["#react","#javascript","#html","#css"]} />
               <Card cardUrl=""
                     btnUrl=""
                     src={placeholder}
