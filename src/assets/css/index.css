@@ -22,14 +22,15 @@
    and links. Includes utility class styles
 ************************************************/
 :root {
-    --bg-color-one: #704488;
-    --bg-color-two: #9297C3;
-    --bg-color-three: #b7e3cc;
-    --bg-color-four: #c4ffb2;
-    --bg-color-five: #d6f7a3;
-    --bg-color-five-dark: #99c753;
-    --bg-color-six: #FFA69E;
-    --bg-color-six-dark: #e38981;
+    --bg-color-one: #dcd6f7;
+    --bg-color-two: #a6b1e1;
+    --bg-color-three: #b4869f;
+    --bg-color-four: #B68B97;
+    --bg-color-four-dark: #61303e;
+    --bg-color-five: #4e4c67;
+    --bg-color-five-dark: #2b293f;
+    --bg-color-six: #def2c8;
+    --bg-color-six-dark: #98ae80;
     --font-main-style: "Roboto Slab", serif;
     --font-sub-style: "Dosis", sans-serif;
     --font-timer-style: "Secular One", sans-serif;
@@ -101,6 +102,9 @@ p {
     position: static;
     width: auto;
     height: auto;
+}
+.white {
+    color: #FFF;
 }
 
 /************************************************
@@ -182,7 +186,7 @@ p {
     font-family: var(--font-sub-style);
     display: inline-block;
     text-decoration: none;
-    color: #FFF;
+    color: #191919;
     font-size: 1.125rem;
     letter-spacing: 2px;
     position: relative;
@@ -195,18 +199,21 @@ p {
     transition: color 3s ease, background-color 3s ease;
 }
 .header nav ul li a.active {
-    color: var(--bg-color-four);
+    color: var(--bg-color-five);
 }
 .header nav ul li a.active::after {
     position: absolute;
     height: 2px;
-    background-color: var(--bg-color-four);
+    background-color: var(--bg-color-five);
     width: 100%;
     left: 50%;
     bottom: 0;
 }
 .header nav.mobile-menu ul.active li a {
     color: #191919;
+}
+.header nav.mobile-menu ul.active li a:hover {
+    color: var(--bg-color-five);
 }
 .header nav.mobile-menu ul.inactive li a {
     color: transparent;
@@ -269,7 +276,7 @@ p {
         width: 100%;
         font-size: 1.25rem;
         background-color: var(--bg-color-one);
-        border-bottom: 1px solid #FFF;
+        border-bottom: 1px solid #191919;
     }
     .header nav.desktop-menu ul li {
         display: inline-block;
@@ -286,7 +293,7 @@ p {
     content: "";
     position: absolute;
     height: 2px;
-    background-color: var(--bg-color-one);
+    background-color: var(--bg-color-five);
     width: 0;
     left: 50%;
     bottom: 0;
@@ -295,11 +302,11 @@ p {
 }
 @media screen and (min-width: 600px) {
     .header nav ul li a::after {
-        background-color: var(--bg-color-four);
+        background-color: var(--bg-color-five);
     }
 }
 .header nav ul li a:hover {
-    color: var(--bg-color-four);
+    color: var(--bg-color-five);
 }
 .header nav ul li a:hover::after {
     width: 100%;
@@ -368,7 +375,7 @@ p {
     color: #191919;
     font-weight: 600;
     margin: 0.1rem;
-    background-color: #85cb6f;
+    background-color: var(--bg-color-four);
 }
 .content-section .tag-sm {
     font-size: .75rem;
@@ -424,6 +431,7 @@ p {
 .about-me h2 {
     padding: 1rem;
     margin-bottom: 1rem;
+    color: #FFF;
 }
 .about-me .timer {
     font-family: var(--font-timer-style);    
@@ -434,7 +442,7 @@ p {
     font-size: 38px;
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--bg-color-five);
+    color: #FFF;
     -webkit-text-stroke: 1px #000; 
 }
 /************************************************
@@ -452,13 +460,12 @@ p {
   }
 .about-me .timer span {
     text-transform: uppercase;
-    background-image: linear-gradient(90deg, #e4fac1 0%, var(--bg-color-five-dark) 50%, var(--bg-color-five) 100%);
+    background-image: linear-gradient(90deg, var(--bg-color-one) 0%, var(--bg-color-three) 50%, var(--bg-color-five) 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: movingBackground 3s linear infinite;
@@ -529,8 +536,8 @@ p {
 }
 .card-list article {
     margin-bottom: 1rem;
-    border: 5px solid #a7e794;
-    background-color: #a8e794;
+    border: 5px solid var(--bg-color-four-dark);
+    background-color: var(--bg-color-four-dark);
 }
 .card-list article a {
     position: relative;
@@ -552,6 +559,7 @@ p {
 .content-txt h3 {
     padding-bottom: 0.5rem;
     line-height: 1.5;
+    color: #FFF;
 }
 .content-txt .card-btn {
     font-family: var(--font-main-style);
@@ -648,7 +656,7 @@ form .contact-btn {
     border: 1px solid #FFF;
     border-radius: 16px;
     box-sizing: border-box;
-    color: #000000;
+    color: #FFF;
     cursor: pointer;
     font-size: 1.125rem;
     padding: 5px;
@@ -892,13 +900,13 @@ form .resume-btn:hover {
     font-family: var(--font-sub-style);
     font-size: 1.125rem;
     font-weight: normal;
-    color: #FFF;
+    color: #191919;
 }
 .footer a {
     font-family: var(--font-sub-style);
     font-size: 0.875rem;
     font-weight: normal;
-    color: #FFF;
+    color: #191919;
 }
 .footer div.vertical-center {
     display:table-cell;

@@ -31,7 +31,7 @@ class Contact extends Component {
       <article className="content-section three">
         <div className="main-content">
           <div className="contact-me">
-            <h2>Contact me</h2>
+            <h2 className="white">Contact me</h2>
             <ContactForm />
           </div>
         </div>
