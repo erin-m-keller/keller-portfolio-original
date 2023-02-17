@@ -1,10 +1,11 @@
-// For more help visit https://formspr.ee/react-help
 import React, { Component } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 
+// @ContactForm made with Formspree: https://formspree.io/
 function ContactForm() {
-  {/* Contact form made with Formspree: https://formspree.io/ */}
+  // initialize hooks
   const [state, handleSubmit] = useForm("xbjedlkn");
+  // return message when email successfully sent
   if (state.succeeded) {
       return <p className="thanks">Thanks for connecting with me!</p>;
   }
@@ -24,7 +25,6 @@ function ContactForm() {
     </div>
   );
 }
- 
 class Contact extends Component {
   render() {
     return (
@@ -39,5 +39,4 @@ class Contact extends Component {
     );
   }
 }
- 
 export default Contact;

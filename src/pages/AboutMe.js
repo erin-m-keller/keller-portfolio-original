@@ -1,25 +1,35 @@
 import React, { Component, useState, useEffect } from "react";
-{/* 
-    ExperienceTimer function is modified from the code found on 
-    this blog post by Julia: https://dev.to/yuridevat/how-to-create-a-timer-with-react-7b9 
-*/}
+
+// @ExperienceTimer function is modified from the code found on 
+// this blog post by Julia: https://dev.to/yuridevat/how-to-create-a-timer-with-react-7b9 
 function ExperienceTimer() {
+    // initialize hooks/variables
     const [days, setDays] = useState(0);
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
     const startingDate = "September 01, 2010";
-
+    /**
+     * @getTime
+     * displays the days, hours, minutes 
+     * and seconds since I started working 
+     * in front end development
+     */
     const getTime = () => {
+        // initialize variables
         const time = Date.now() - Date.parse(startingDate);
-
+        // get days
         setDays(Math.floor(time / (1000 * 60 * 60 * 24)).toLocaleString());
+        // get hours
         setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
+        // get minutes
         setMinutes(Math.floor((time / 1000 / 60) % 60));
+        // get seconds
         setSeconds(Math.floor((time / 1000) % 60));
     };
-
+    // runs on page load
     useEffect(() => {
+        // set interval to increment the time 
         const interval = setInterval(() => getTime(startingDate), 1000);
         return () => clearInterval(interval);
     }, []);
@@ -35,7 +45,6 @@ function ExperienceTimer() {
         </div>
     );
 }
- 
 class AboutMe extends Component {
   render() {
     return (
@@ -54,5 +63,4 @@ class AboutMe extends Component {
     );
   }
 }
- 
 export default AboutMe;

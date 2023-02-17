@@ -5,20 +5,21 @@ import Resume from "./Resume";
 import Work from "./Work";
 import MobileMenu from "../components/MobileMenu";
 import DesktopMenu from "../components/DesktopMenu";
+import heroImg from "../assets/images/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png";
  
 function Main () {
+    // initialize hooks/variables
     const [showMobileMenu, setMobileMenu] = useState(null);
     const [isMobile, setIsMobile] = useState(false);
     const windowSize = useRef([window.innerWidth, window.innerHeight]);
-
-    /* Close mobile menu when window is resized */
+    // Close mobile menu when window is resized
     if (!isMobile && showMobileMenu) {
         setMobileMenu(false)
         setIsMobile(false)
     }
-
+    // runs on page load
     useEffect(() => {
-        /* set isMobile true on page resize less than 600w */
+        // set isMobile true on page resize less than 600w
         window.addEventListener('resize', () => {
             if (window.innerWidth < 600) {
                 setIsMobile(true);
@@ -26,7 +27,7 @@ function Main () {
                 setIsMobile(false);
             }
         });
-        /* set isMobile true if window width is less than 600w on page load */
+        // set isMobile true if window width is less than 600w on page load
         if (windowSize.current[0] <= 600) {
             setIsMobile(true);
         }
@@ -49,6 +50,9 @@ function Main () {
             <main className="content" id="main">
                 <div className="hero">
                     <h1 className="header-title">Hi, I'm <span className="emphasis">Erin Keller</span>.</h1>
+                    <div className="img-container">
+                        <img src={heroImg} alt="A tree with rabbits and birds" />
+                    </div>
                 </div>
                 <section name="about-me">
                     <AboutMe />

@@ -35,6 +35,14 @@
     --font-sub-style: "Dosis", sans-serif;
     --font-timer-style: "Secular One", sans-serif;
     --font-aboutme-style: "Merienda", sans-serif;
+
+
+
+    --border: 3px;
+    --color1: #6be89b;
+    --color2: #0076a5;
+    --from: 30deg;
+    --distance: 46%;
 }
 * {
     box-sizing: border-box;
@@ -129,11 +137,9 @@ p {
     display: inline-block;
     font-size: 1.813rem;
     color: #000;
-    position: absolute;
-    left: auto;
-    right: auto;
-    margin: 0 auto;
-    top: 9rem;
+    margin: 1em auto;
+    width: 100%;
+    text-align: center;
 }
 @media screen and (min-width: 1000px) {
     .header-title {
@@ -313,12 +319,19 @@ p {
 }
 .hero {    
     padding: 1rem;
-    height:100vh;
+    height:115vh;
     width:100vw;
-    background: url('../images/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png'), var(--bg-color-two);
-    background-size: 75%;
-    background-position: right 3rem center;
-    background-repeat: no-repeat;
+    background-color: var(--bg-color-two);
+}
+.hero .img-container {
+    position: relative;
+    padding: 1em;
+    text-align: center;
+}
+.hero .img-container img {
+    width: 75%;
+    max-width: 500px;
+    border-radius: 50%;
 }
 .hero .emphasis {
     padding: 30px 0 8px;
