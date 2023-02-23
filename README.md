@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## User Story
 
-```
+```md
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
@@ -14,7 +14,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 ## Acceptance Criteria
 
-```
+```md
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
@@ -36,8 +36,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Deployed page
 
-Page published at: [https://erin-m-keller.github.io/keller-portfolio/](https://erin-m-keller.github.io/keller-portfolio/)
+[View Published Page](https://erin-m-keller.github.io/keller-portfolio/)
 
 ## License
 
-Please refer to the LICENSE in the repo.
+[MIT](https://choosealicense.com/licenses/mit/)
