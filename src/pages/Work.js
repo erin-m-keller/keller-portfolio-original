@@ -8,6 +8,7 @@ import pwdScreenshot from "../assets/images/password-generator-screenshot.png";
 import reactCalcScreenshot from "../assets/images/react-calculator-screenshot.png";
 import reactToDo from "../assets/images/react-todo-screenshot.png";
 import quizScreenshot from "../assets/images/quiz-screenshot.png";
+import workdayScreenshot from "../assets/images/workday-scheduler.png";
  
 class Work extends Component {
   render() {
@@ -23,6 +24,12 @@ class Work extends Component {
                     alt="Screenshot of React Powered Calculator App"
                     title="React Powered Calculator"
                     tags={["#react","#javascript","#html","#css"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/keller-scheduler/"
+                    btnUrl="https://github.com/erin-m-keller/keller-scheduler"
+                    src={workdayScreenshot}
+                    alt="Work Day Scheduler"
+                    title="Work Day Scheduler"
+                    tags={["#jquery","#day.js","#html","#css"]} />
               <Card cardUrl="https://erin-m-keller.github.io/keller-quiz/"
                     btnUrl="https://github.com/erin-m-keller/keller-quiz"
                     src={quizScreenshot}
@@ -59,12 +66,6 @@ class Work extends Component {
                     alt="LastFM Music Artist Search Engine"
                     title="LastFM Music Artist Search Engine"
                     tags={["#react","#javascript","#html","#css", "#lastfm api"]} />
-              <Card cardUrl=""
-                    btnUrl=""
-                    src={placeholder}
-                    alt="Sample photo"
-                    title="Sample Heading"
-                    tags={["#react","#javascript","#html","#css"]} />
               <Card cardUrl=""
                     btnUrl=""
                     src={placeholder}
