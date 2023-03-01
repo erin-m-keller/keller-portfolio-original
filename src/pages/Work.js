@@ -9,6 +9,7 @@ import reactCalcScreenshot from "../assets/images/react-calculator-screenshot.pn
 import reactToDo from "../assets/images/react-todo-screenshot.png";
 import quizScreenshot from "../assets/images/quiz-screenshot.png";
 import workdayScreenshot from "../assets/images/workday-scheduler.png";
+import diceGame from "../assets/images/dice-game.png";
  
 class Work extends Component {
   render() {
@@ -48,6 +49,12 @@ class Work extends Component {
                     alt="Erin Keller Portfolio"
                     title="Erin Keller Portfolio"
                     tags={["#react","#javascript","#html","#css"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/keller-dice/"
+                    btnUrl="https://github.com/erin-m-keller/keller-dice"
+                    src={diceGame}
+                    alt="Dice Game"
+                    title="Dice Game"
+                    tags={["#jQuery","#html","#css","#bulma css","#localstorage"]} />
               <Card cardUrl="https://erin-m-keller.github.io/keller-todo/"
                     btnUrl="https://github.com/erin-m-keller/keller-todo"
                     src={reactToDo}
@@ -65,13 +72,7 @@ class Work extends Component {
                     src={lastFmScreenshot}
                     alt="LastFM Music Artist Search Engine"
                     title="LastFM Music Artist Search Engine"
-                    tags={["#react","#javascript","#html","#css", "#lastfm api"]} />
-              <Card cardUrl=""
-                    btnUrl=""
-                    src={placeholder}
-                    alt="Sample photo"
-                    title="Sample Heading"
-                    tags={["#react","#javascript","#html","#css"]} />
+                    tags={["#react","#javascript","#html","#css","#bulma css", "#lastfm api"]} />
             </div>
           </div>
         </div>
