@@ -10,6 +10,7 @@ import reactToDo from "../assets/images/react-todo-screenshot.png";
 import quizScreenshot from "../assets/images/quiz-screenshot.png";
 import workdayScreenshot from "../assets/images/workday-scheduler.png";
 import diceGame from "../assets/images/dice-game.png";
+import pokemonScreenshot from "../assets/images/pokemon-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -49,6 +50,12 @@ class Work extends Component {
                     alt="Erin Keller Portfolio"
                     title="Erin Keller Portfolio"
                     tags={["#react","#javascript","#html","#css"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/keller-pokemon/"
+                    btnUrl="https://github.com/erin-m-keller/keller-pokemon"
+                    src={pokemonScreenshot}
+                    alt="Pokémon Search Engine"
+                    title="Pokémon Search Engine"
+                    tags={["#html","#css","#javascript","#react","#bootstrap","#pokéApi"]} />
               <Card cardUrl="https://erin-m-keller.github.io/keller-dice/"
                     btnUrl="https://github.com/erin-m-keller/keller-dice"
                     src={diceGame}
