@@ -20,8 +20,8 @@ class Work extends Component {
           <div className="work">
             <h2>Work</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
-              <Card cardUrl="https://erin-m-keller.github.io/react-calculator/"
-                    btnUrl="https://github.com/erin-m-keller/react-calculator"
+              <Card cardUrl="https://erin-m-keller.github.io/keller-calculator/"
+                    btnUrl="https://github.com/erin-m-keller/keller-calculator"
                     src={reactCalcScreenshot}
                     alt="Screenshot of React Powered Calculator App"
                     title="React Powered Calculator"
@@ -38,8 +38,8 @@ class Work extends Component {
                     alt="Coding Quiz"
                     title="Coding Quiz"
                     tags={["#javascript","#html","#css","#bootstrap"]} />
-              <Card cardUrl="https://erin-m-keller.github.io/password-generator/"
-                    btnUrl="https://github.com/erin-m-keller/password-generator"
+              <Card cardUrl="https://erin-m-keller.github.io/keller-password/"
+                    btnUrl="https://github.com/erin-m-keller/keller-password"
                     src={pwdScreenshot}
                     alt="Password Generator"
                     title="Password Generator"
@@ -68,14 +68,14 @@ class Work extends Component {
                     alt="React Powered To-Do List"
                     title="React Powered To-Do List"
                     tags={["#react","#javascript","#html","#css","#localstorage"]} />
-              <Card cardUrl="https://erin-m-keller.github.io/recipe-app/#/"
-                    btnUrl="https://github.com/erin-m-keller/recipe-app"
+              <Card cardUrl="https://erin-m-keller.github.io/keller-recipe/#/"
+                    btnUrl="https://github.com/erin-m-keller/keller-recipe"
                     src={recipeAppScreenshot}
                     alt="Recipe Grocery List Search Engine"
                     title="Recipe Grocery List Search Engine"
                     tags={["#react","#javascript","#html","#css", "#edamam api"]} />
-              <Card cardUrl="https://erin-m-keller.github.io/lastfm-app/#/"
-                    btnUrl="https://github.com/erin-m-keller/lastfm-app"
+              <Card cardUrl="https://erin-m-keller.github.io/keller-lastfm/#/"
+                    btnUrl="https://github.com/erin-m-keller/keller-lastfm"
                     src={lastFmScreenshot}
                     alt="LastFM Music Artist Search Engine"
                     title="LastFM Music Artist Search Engine"
