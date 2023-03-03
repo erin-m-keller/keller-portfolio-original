@@ -116,6 +116,8 @@ class Resume extends Component {
                     <p className="sm">MySQL</p>
                     <p className="sm">MongoDB</p>
                     <p className="sm">Git</p>
+                    <p className="sm">Microsoft Office Suite</p>
+                    <p className="sm">Adobe Suite</p>
                     <p className="sm">Interpersonal Skills</p>
                     <p className="sm">Creativity</p>
                     <p className="sm">Problem Solving</p>
@@ -123,15 +125,13 @@ class Resume extends Component {
                     <p className="sm">Computer Skills</p>
                     <p className="sm">Effective Time Management</p>
                     <p className="sm">Ability to Multitask</p>
+                    <p className="sm">Growth Minded</p>
                     <p className="sm">Fast Learner</p>
                     <p className="sm">Adaptability</p>
                     <p className="sm">Customer Service</p>
                     <p className="sm">Ability to Work Under Pressure</p>
                     <p className="sm">Ability to Work in a Team</p>
                     <p className="sm">Communication Skills</p>
-                    <p className="sm">Microsoft Office</p>
-                    <p className="sm">Adobe Illustrator</p>
-                    <p className="sm">Adobe Photoshop</p>
                   </article>
                   <article>
                     <p className="resume-bold">Hobbies</p>
