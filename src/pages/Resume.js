@@ -23,7 +23,7 @@ class Resume extends Component {
                       <h4 className="resume-bold">Profile</h4>
                       <p className="sm">
                         Technically proficient and committed developer who maintains cutting-edge skills and industry knowledge. Experience coding responsive websites 
-                        and web applications using HTML/HTML5, LESS, CSS/CSS3, SASS, JavaScript, jQuery, Node.js, MongoDB, and ReactJS.
+                        and web applications using HTML5, CSS, LESS, SASS, JavaScript, jQuery, ReactJS, Node.js, and MongoDB.
                       </p>
                   </article>
                   <article>
@@ -31,7 +31,7 @@ class Resume extends Component {
                       <h4 className="resume-bold">Employment History</h4>
                       <p className="resume-bold">Learning Developer, IBM, Lansing<span>May 2013 - Present</span></p>
                       <ul className="resume-list">
-                        <li className="sm">Worked in an agile environment with weekly stand-ups, tracked issues in Jira, and conducted sprint planning and retrospectives every two weeks.</li>
+                        <li className="sm">Works in an agile environment with weekly stand-ups, tracks issues in Jira, and conducts sprint planning and retrospectives every two weeks.</li>
                         <li className="sm">Rebuilt 5-year-old PHP application in React with full user experience redesign (Leadership Academy).</li>
                         <li className="sm">Refactored legacy HTML to meet industry standards and Accessibility compliance.</li>
                         <li className="sm">Utilized HTML, CSS, and JavaScript to create 100+ responsive pages for leadership, management and executive development.</li>
@@ -72,13 +72,13 @@ class Resume extends Component {
                   <article>
                     <h4 className="resume-bold">Education</h4>
                     <div>
+                      <p className="resume-bold">Lansing Community College</p>
+                      <p className="sm">Associate's Degree: Computer Programmer/Business Analyst</p>
+                    </div>
+                    <div>
                       <p className="resume-bold">Sault Area High School</p>
                       <p className="sm">Diploma: General Education</p>
                       <p className="sm">Certification: Novell Networking</p>
-                    </div>
-                    <div>
-                      <p className="resume-bold">Lansing Community College</p>
-                      <p className="sm">Associate's Degree: Computer Programmer/Business Analyst</p>
                     </div>
                   </article>
                   <article>
@@ -92,7 +92,6 @@ class Resume extends Component {
                     <div className="contact">
                       <p className="sm">Lansing, Michigan 48911</p>
                       <p className="sm">United States</p>
-                      <p className="sm">989-780-6463</p>
                       <p className="sm"><a href="mailto:aestheticartist@gmail.com">aestheticartist@gmail.com</a></p>
                     </div>
                   </article>
@@ -103,6 +102,20 @@ class Resume extends Component {
                   </article>
                   <article>
                     <p  className="resume-bold">Skills</p>
+                    <p className="sm">HTML5</p>
+                    <p className="sm">CSS3</p>
+                    <p className="sm">SASS</p>
+                    <p className="sm">LESS</p>
+                    <p className="sm">Bootstrap</p>
+                    <p className="sm">Bulma CSS</p>
+                    <p className="sm">Tailwind CSS</p>
+                    <p className="sm">JavaScript</p>
+                    <p className="sm">jQuery</p>
+                    <p className="sm">React JS</p>
+                    <p className="sm">Node.js</p>
+                    <p className="sm">MySQL</p>
+                    <p className="sm">MongoDB</p>
+                    <p className="sm">Git</p>
                     <p className="sm">Interpersonal Skills</p>
                     <p className="sm">Creativity</p>
                     <p className="sm">Problem Solving</p>
@@ -119,19 +132,6 @@ class Resume extends Component {
                     <p className="sm">Microsoft Office</p>
                     <p className="sm">Adobe Illustrator</p>
                     <p className="sm">Adobe Photoshop</p>
-                    <p className="sm">CSS3</p>
-                    <p className="sm">HTML</p>
-                    <p className="sm">HTML &amp; CSS</p>
-                    <p className="sm">HTML5</p>
-                    <p className="sm">Bootstrap</p>
-                    <p className="sm">jQuery</p>
-                    <p className="sm">CSS</p>
-                    <p className="sm">Node.js</p>
-                    <p className="sm">MySQL</p>
-                    <p className="sm">MongoDB</p>
-                    <p className="sm">Git</p>
-                    <p className="sm">React</p>
-                    <p className="sm">JavaScript</p>
                   </article>
                   <article>
                     <p className="resume-bold">Hobbies</p>
