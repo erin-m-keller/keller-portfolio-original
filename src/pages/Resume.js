@@ -77,7 +77,7 @@ class Resume extends Component {
                     </div>
                     <div>
                       <p className="resume-bold">Sault Area High School</p>
-                      <p className="sm">Diploma: General Education</p>
+                      <p className="sm">Diploma</p>
                       <p className="sm">Certification: Novell Networking</p>
                     </div>
                   </article>
