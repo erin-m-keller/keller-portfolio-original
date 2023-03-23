@@ -11,6 +11,7 @@ import workdayScreenshot from "../assets/images/workday-scheduler.png";
 import diceGame from "../assets/images/dice-game.png";
 import pokemonScreenshot from "../assets/images/pokemon-screenshot.png";
 import weatherScreenshot from "../assets/images/weather-screenshot.png";
+import volunteerFinderScreenshot from "../assets/images/volunteer-finder-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -26,6 +27,14 @@ class Work extends Component {
                     alt="Screenshot of React Powered Calculator App"
                     title="React Powered Calculator"
                     tags={["#html","#css","#javascript","#react"]} />
+
+              <Card cardUrl="https://erin-m-keller.github.io/volunteer-finder/"
+                    btnUrl="https://github.com/erin-m-keller/volunteer-finder"
+                    src={volunteerFinderScreenshot}
+                    alt="Volunteer Finder"
+                    title="Volunteer Finder"
+                    tags={["#html","#css","#bulma-css","#javascript","#firebase"]} />
+
               <Card cardUrl="https://erin-m-keller.github.io/keller-weather/"
                     btnUrl="https://github.com/erin-m-keller/keller-weather"
                     src={weatherScreenshot}
