@@ -5,7 +5,7 @@ import Resume from "./Resume";
 import Work from "./Work";
 import MobileMenu from "../components/MobileMenu";
 import DesktopMenu from "../components/DesktopMenu";
-import heroImg from "../assets/images/vecteezy_rabbit-in-the-beautiful-forest_10856435_332.png";
+import selfImg from "../assets/images/erin.jpeg";
  
 function Main () {
     // initialize hooks/variables
@@ -51,7 +51,7 @@ function Main () {
                 <div className="hero">
                     <h1 className="header-title">Hi, I'm <span className="emphasis">Erin Keller</span>.</h1>
                     <div className="img-container">
-                        <img src={heroImg} alt="A tree with rabbits and birds" />
+                        <img src={selfImg} alt="A photo of Erin Keller" />
                     </div>
                 </div>
                 <section name="about-me">

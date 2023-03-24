@@ -12,9 +12,6 @@ class Resume extends Component {
             <div className="resume-form">
               <div className="main">
                 <div className="edu-exp">
-                  <figure>
-                    <img src={profileImg} alt="Photo of Erin Keller" className="resume-img" />
-                  </figure>
                   <h3 className="resume-title">Erin Keller<span className="resume-subtitle">Full Stack Developer</span></h3>
                   <form action={resume} target="_blank">
                     <input type="submit" value="Download" className="resume-btn" />
