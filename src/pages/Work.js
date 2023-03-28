@@ -19,7 +19,16 @@ class Work extends Component {
       <div className="content-section two">
         <div className="main-content">
           <div className="work">
-            <h2>Work</h2>
+            <h2>Collaborations</h2>
+            <div className="card-list" style={{marginBottom:"2em"}}>
+                  <Card cardUrl="https://erin-m-keller.github.io/volunteer-finder/"
+                        btnUrl="https://github.com/erin-m-keller/volunteer-finder"
+                        src={volunteerFinderScreenshot}
+                        alt="Volunteer Finder"
+                        title="Volunteer Finder"
+                        tags={["#html","#css","#bulma-css","#javascript","#firebase"]} />
+            </div>
+            <h2>Personal Projects</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
               <Card cardUrl="https://erin-m-keller.github.io/keller-calculator/"
                     btnUrl="https://github.com/erin-m-keller/keller-calculator"
@@ -27,14 +36,6 @@ class Work extends Component {
                     alt="Screenshot of React Powered Calculator App"
                     title="React Powered Calculator"
                     tags={["#html","#css","#javascript","#react"]} />
-
-              <Card cardUrl="https://erin-m-keller.github.io/volunteer-finder/"
-                    btnUrl="https://github.com/erin-m-keller/volunteer-finder"
-                    src={volunteerFinderScreenshot}
-                    alt="Volunteer Finder"
-                    title="Volunteer Finder"
-                    tags={["#html","#css","#bulma-css","#javascript","#firebase"]} />
-
               <Card cardUrl="https://erin-m-keller.github.io/keller-weather/"
                     btnUrl="https://github.com/erin-m-keller/keller-weather"
                     src={weatherScreenshot}
