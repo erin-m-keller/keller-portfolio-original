@@ -51,4 +51,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[![MIT license](https://img.shields.io/badge/License-MIT-purple.svg)](https://lbesson.mit-license.org/)
