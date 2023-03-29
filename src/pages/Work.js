@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "../components/Card";
+import NodeCard from "../components/NodeCard";
 import portfolioScreenshot from "../assets/images/portfolio-screenshot.png";
 import recipeAppScreenshot from "../assets/images/recipe-app-screenshot.png";
 import lastFmScreenshot from "../assets/images/lastfm-screenshot.png";
@@ -12,6 +13,8 @@ import diceGame from "../assets/images/dice-game.png";
 import pokemonScreenshot from "../assets/images/pokemon-screenshot.png";
 import weatherScreenshot from "../assets/images/weather-screenshot.png";
 import volunteerFinderScreenshot from "../assets/images/volunteer-finder-screenshot.png";
+import svgMakeScreenshot from "../assets/images/svg-maker-screenshot.png";
+import readmeGeneratorScreenshot from "../assets/images/readme-generator-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -28,7 +31,7 @@ class Work extends Component {
                         title="Volunteer Finder"
                         tags={["#html","#css","#bulma-css","#javascript","#firebase"]} />
             </div>
-            <h2>Personal Projects</h2>
+            <h2>Personal Web Projects</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
               <Card cardUrl="https://erin-m-keller.github.io/keller-calculator/"
                     btnUrl="https://github.com/erin-m-keller/keller-calculator"
@@ -96,6 +99,21 @@ class Work extends Component {
                     alt="LastFM Music Artist Search Engine"
                     title="LastFM Music Artist Search Engine"
                     tags={["#html","#css","#bulma-css","#javascript","#react","#lastfm api"]} />
+            </div>
+            <h2>Node.js Applications</h2>
+            <div className="card-list" style={{marginBottom:"2em"}}>
+              <NodeCard cardUrl="javascript:void(0)"
+                    btnUrl="https://github.com/erin-m-keller/keller-svg-maker"
+                    src={svgMakeScreenshot}
+                    alt="Screenshot of SVG Maker Node.js App"
+                    title="SVG Maker Node.js"
+                    tags={["#javascript","#nodeJS","#fs","#inquirer","#jest"]} />
+              <NodeCard cardUrl="javascript:void(0)"
+                    btnUrl="https://github.com/erin-m-keller/keller-readme"
+                    src={readmeGeneratorScreenshot}
+                    alt="Screenshot of README Generator Node.js App"
+                    title="README Generator Node.js"
+                    tags={["#javascript","#nodeJS","#fs","#inquirer"]} />
             </div>
           </div>
         </div>
