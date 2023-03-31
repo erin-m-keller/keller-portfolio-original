@@ -59,7 +59,7 @@ class Resume extends Component {
                       <p className="resume-bold">Shift Leader II, Speedway LLC, Lansing<span>Feb 2006 - Sep 2010</span></p>
                       <ul className="resume-list">
                         <li className="sm">Provided leadership and direction for employees.</li>
-                        <li className="sm">Supervised daily tasks to drive productivity and effeciency.</li>
+                        <li className="sm">Supervised daily tasks to drive productivity and efficiency.</li>
                         <li className="sm">Implemented training processes for newly hired employees.</li>
                         <li className="sm">Handled weekly inventory control to replenish stock and maintain costs.</li>
                         <li className="sm">Upheld food safety standards at all time.</li>
