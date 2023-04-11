@@ -34,12 +34,6 @@ class Work extends Component {
             </div>
             <h2>Personal Web Projects</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
-              <Card cardUrl="https://erin-m-keller.github.io/keller-calculator/"
-                    btnUrl="https://github.com/erin-m-keller/keller-calculator"
-                    src={reactCalcScreenshot}
-                    alt="Screenshot of React Powered Calculator App"
-                    title="React Powered Calculator"
-                    tags={["#html","#css","#javascript","#react"]} />
               <Card cardUrl="https://keller-note-taker.herokuapp.com/"
                     btnUrl="https://github.com/erin-m-keller/keller-note-tracker"
                     src={noteTakerScreenshot}
@@ -75,6 +69,12 @@ class Work extends Component {
                     src={portfolioScreenshot}
                     alt="Erin Keller Portfolio"
                     title="Erin Keller Portfolio"
+                    tags={["#html","#css","#javascript","#react"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/keller-calculator/"
+                    btnUrl="https://github.com/erin-m-keller/keller-calculator"
+                    src={reactCalcScreenshot}
+                    alt="Screenshot of React Powered Calculator App"
+                    title="React Powered Calculator"
                     tags={["#html","#css","#javascript","#react"]} />
               <Card cardUrl="https://erin-m-keller.github.io/keller-pokemon/"
                     btnUrl="https://github.com/erin-m-keller/keller-pokemon"
