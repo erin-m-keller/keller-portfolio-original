@@ -15,6 +15,7 @@ import weatherScreenshot from "../assets/images/weather-screenshot.png";
 import volunteerFinderScreenshot from "../assets/images/volunteer-finder-screenshot.png";
 import svgMakeScreenshot from "../assets/images/svg-maker-screenshot.png";
 import readmeGeneratorScreenshot from "../assets/images/readme-generator-screenshot.png";
+import noteTakerScreenshot from "../assets/images/note-taker-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -39,6 +40,12 @@ class Work extends Component {
                     alt="Screenshot of React Powered Calculator App"
                     title="React Powered Calculator"
                     tags={["#html","#css","#javascript","#react"]} />
+              <Card cardUrl="https://keller-note-taker.herokuapp.com/"
+                    btnUrl="https://github.com/erin-m-keller/keller-note-tracker"
+                    src={noteTakerScreenshot}
+                    alt="Express.js Note Tracker"
+                    title="Express.js Note Tracker"
+                    tags={["#html","#css","#pure-css","#javascript","#nodeJS","expressJS","fs","uuid"]} />
               <Card cardUrl="https://erin-m-keller.github.io/keller-weather/"
                     btnUrl="https://github.com/erin-m-keller/keller-weather"
                     src={weatherScreenshot}
