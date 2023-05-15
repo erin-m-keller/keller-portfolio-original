@@ -16,6 +16,8 @@ import volunteerFinderScreenshot from "../assets/images/volunteer-finder-screens
 import svgMakeScreenshot from "../assets/images/svg-maker-screenshot.png";
 import readmeGeneratorScreenshot from "../assets/images/readme-generator-screenshot.png";
 import noteTakerScreenshot from "../assets/images/note-taker-screenshot.png";
+import empTrackerScreenshot from "../assets/images/employee-tracker-screenshot.png";
+import techBlogScreenshot from "../assets/images/techBlog.png";
  
 class Work extends Component {
   render() {
@@ -34,12 +36,18 @@ class Work extends Component {
             </div>
             <h2>Personal Web Projects</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+              <Card cardUrl="https://keller-tech-blog.herokuapp.com/"
+                    btnUrl="https://github.com/erin-m-keller/keller-tech-blog"
+                    src={techBlogScreenshot}
+                    alt="Tech Blog"
+                    title="Tech Blog"
+                    tags={["#html","#css","#fomantic-ui","#javascript","#nodeJS","#expressJS","#mysql","#sequelize","#handlebars"]} />
               <Card cardUrl="https://keller-note-taker.herokuapp.com/"
                     btnUrl="https://github.com/erin-m-keller/keller-note-tracker"
                     src={noteTakerScreenshot}
                     alt="Express.js Note Tracker"
                     title="Express.js Note Tracker"
-                    tags={["#html","#css","#pure-css","#javascript","#nodeJS","expressJS","fs","uuid"]} />
+                    tags={["#html","#css","#pure-css","#javascript","#nodeJS","#expressJS","#fs","#uuid"]} />
               <Card cardUrl="https://erin-m-keller.github.io/keller-weather/"
                     btnUrl="https://github.com/erin-m-keller/keller-weather"
                     src={weatherScreenshot}
@@ -109,6 +117,12 @@ class Work extends Component {
             </div>
             <h2>Node.js Applications</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+              <NodeCard cardUrl="javascript:void(0)"
+                    btnUrl="https://github.com/erin-m-keller/keller-employee-tracker"
+                    src={empTrackerScreenshot}
+                    alt="Screenshot of Employee Database Manager"
+                    title="Employee Database Manager"
+                    tags={["#javascript","#nodeJS","mysql"]} />
               <NodeCard cardUrl="javascript:void(0)"
                     btnUrl="https://github.com/erin-m-keller/keller-svg-maker"
                     src={svgMakeScreenshot}
