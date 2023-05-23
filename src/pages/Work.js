@@ -18,6 +18,7 @@ import readmeGeneratorScreenshot from "../assets/images/readme-generator-screens
 import noteTakerScreenshot from "../assets/images/note-taker-screenshot.png";
 import empTrackerScreenshot from "../assets/images/employee-tracker-screenshot.png";
 import techBlogScreenshot from "../assets/images/techBlog.png";
+import metaInsightScreenshot from "../assets/images/meta-insight.png";
  
 class Work extends Component {
   render() {
@@ -27,6 +28,12 @@ class Work extends Component {
           <div className="work">
             <h2>Collaborations</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+                  <Card cardUrl="https://meta-insight.herokuapp.com/"
+                        btnUrl="https://github.com/erin-m-keller/meta-insight"
+                        src={metaInsightScreenshot}
+                        alt="Meta-Insight"
+                        title="Meta-Insight"
+                        tags={["#html","#css","#ionic","#javascript","#mysql","express","#jawsdb","#handlebars"]} />
                   <Card cardUrl="https://erin-m-keller.github.io/volunteer-finder/"
                         btnUrl="https://github.com/erin-m-keller/volunteer-finder"
                         src={volunteerFinderScreenshot}
