@@ -19,6 +19,7 @@ import noteTakerScreenshot from "../assets/images/note-taker-screenshot.png";
 import empTrackerScreenshot from "../assets/images/employee-tracker-screenshot.png";
 import techBlogScreenshot from "../assets/images/techBlog.png";
 import metaInsightScreenshot from "../assets/images/meta-insight.png";
+import socialNetworkScreenshot from "../assets/images/social-network-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -125,11 +126,17 @@ class Work extends Component {
             <h2>Node.js Applications</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
               <NodeCard cardUrl="javascript:void(0)"
+                    btnUrl="https://github.com/erin-m-keller/keller-social-network"
+                    src={socialNetworkScreenshot}
+                    alt="Screenshot of Social Network API"
+                    title="Social Network API"
+                    tags={["#javascript","#expressJS","#nodeJS","#mongoDB","#mongoose","#momentJS"]} />
+              <NodeCard cardUrl="javascript:void(0)"
                     btnUrl="https://github.com/erin-m-keller/keller-employee-tracker"
                     src={empTrackerScreenshot}
                     alt="Screenshot of Employee Database Manager"
                     title="Employee Database Manager"
-                    tags={["#javascript","#nodeJS","mysql"]} />
+                    tags={["#javascript","#nodeJS","#mysql"]} />
               <NodeCard cardUrl="javascript:void(0)"
                     btnUrl="https://github.com/erin-m-keller/keller-svg-maker"
                     src={svgMakeScreenshot}

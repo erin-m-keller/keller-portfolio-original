@@ -21,7 +21,7 @@ class MobileMenu extends Component {
             </a>
             <ul role="menu" aria-labelledby="menu-btn" className={showMobileMenu ? "active" : "inactive"}>
                 <li><Link onClick={() => setMobileMenu(!showMobileMenu)} tabIndex="1" to="about-me" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">About Me</Link></li>
-                <li><Link onClick={() => setMobileMenu(!showMobileMenu)} tabIndex="1" to="work" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Examples</Link></li>
+                <li><Link onClick={() => setMobileMenu(!showMobileMenu)} tabIndex="1" to="work" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Work</Link></li>
                 <li><Link onClick={() => setMobileMenu(!showMobileMenu)} tabIndex="1" to="contact" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Contact Me</Link></li>
                 <li><Link onClick={() => setMobileMenu(!showMobileMenu)} tabIndex="1" to="resume" spy={true} smooth={true} offset={-50} duration={500} activeclassname="active" role="menuitem">Resume</Link></li>
             </ul>
