@@ -140,14 +140,14 @@ class Work extends Component {
               <NodeCard cardUrl="javascript:void(0)"
                     btnUrl="https://github.com/erin-m-keller/keller-svg-maker"
                     src={svgMakeScreenshot}
-                    alt="Screenshot of SVG Maker Node.js App"
-                    title="SVG Maker Node.js"
+                    alt="Screenshot of SVG Maker"
+                    title="SVG Maker"
                     tags={["#javascript","#nodeJS","#fs","#inquirer","#jest"]} />
               <NodeCard cardUrl="javascript:void(0)"
                     btnUrl="https://github.com/erin-m-keller/keller-readme"
                     src={readmeGeneratorScreenshot}
-                    alt="Screenshot of README Generator Node.js App"
-                    title="README Generator Node.js"
+                    alt="Screenshot of README Generator"
+                    title="README Generator"
                     tags={["#javascript","#nodeJS","#fs","#inquirer"]} />
             </div>
           </div>
