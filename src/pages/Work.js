@@ -20,6 +20,9 @@ import empTrackerScreenshot from "../assets/images/employee-tracker-screenshot.p
 import techBlogScreenshot from "../assets/images/techBlog.png";
 import metaInsightScreenshot from "../assets/images/meta-insight.png";
 import socialNetworkScreenshot from "../assets/images/social-network-screenshot.png";
+import pwaScreenshot from "../assets/images/pwa-screenshot.png";
+import socialScreenshot from "../assets/images/social-api.png";
+import ecommerceScreenshot from "../assets/images/ecommerce-screenshot.png";
  
 class Work extends Component {
   render() {
@@ -44,6 +47,12 @@ class Work extends Component {
             </div>
             <h2>Personal Web Projects</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+            <Card cardUrl="https://keller-text-editor-c96daa18d32b.herokuapp.com/"
+                  btnUrl="https://github.com/erin-m-keller/keller-text-editor"
+                  src={pwaScreenshot}
+                  alt="PWA Text Editor"
+                  title="PWA Text Editor"
+                  tags={["#javascript","#css","#nodeJS","#expressJS","#pwa"]} />
               <Card cardUrl="https://keller-tech-blog.herokuapp.com/"
                     btnUrl="https://github.com/erin-m-keller/keller-tech-blog"
                     src={techBlogScreenshot}
@@ -80,8 +89,8 @@ class Work extends Component {
                     alt="Password Generator"
                     title="Password Generator"
                     tags={["#html","#css","#javascript"]} />
-              <Card cardUrl="https://erin-m-keller.github.io/keller-portfolio/#/"
-                    btnUrl="https://github.com/erin-m-keller/keller-portfolio"
+              <Card cardUrl="https://erin-m-keller.github.io/keller-portfolio-original/#/"
+                    btnUrl="https://github.com/erin-m-keller/keller-portfolio-original"
                     src={portfolioScreenshot}
                     alt="Erin Keller Portfolio"
                     title="Erin Keller Portfolio"
@@ -125,6 +134,12 @@ class Work extends Component {
             </div>
             <h2>Node.js Applications</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+                  <NodeCard cardUrl="javascript:void(0)"
+                        btnUrl="https://github.com/erin-m-keller/keller-social-network"
+                        src={ecommerceScreenshot}
+                        alt="Screenshot of Ecommerce API"
+                        title="Ecommerce API"
+                        tags={["#javascript","#nodeJS","#expressJS","#sequelize","#mysql"]} />
               <NodeCard cardUrl="javascript:void(0)"
                     btnUrl="https://github.com/erin-m-keller/keller-social-network"
                     src={socialNetworkScreenshot}
