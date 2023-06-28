@@ -49,7 +49,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Deployed page
 
-[View Published Page](https://erin-m-keller.github.io/keller-portfolio-original/#/)
+[View Published Page](https://erin-m-keller.github.io/keller-portfolio-original/)
 
 ## License
 
