@@ -21,8 +21,8 @@ import techBlogScreenshot from "../assets/images/techBlog.png";
 import metaInsightScreenshot from "../assets/images/meta-insight.png";
 import socialNetworkScreenshot from "../assets/images/social-network-screenshot.png";
 import pwaScreenshot from "../assets/images/pwa-screenshot.png";
-import socialScreenshot from "../assets/images/social-api.png";
 import ecommerceScreenshot from "../assets/images/ecommerce-screenshot.png";
+import bookSearch from "../assets/images/book-search.png";
  
 class Work extends Component {
   render() {
@@ -47,6 +47,12 @@ class Work extends Component {
             </div>
             <h2>Personal Web Projects</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+            <Card cardUrl="https://keller-book-search-f22cfc8fab39.herokuapp.com/"
+                  btnUrl="https://github.com/erin-m-keller/keller-book-search"
+                  src={bookSearch}
+                  alt="Google Book Search"
+                  title="Google Book Search"
+                  tags={["#html5","#css","#javascript","#nodeJS","#expressJS","#mongoDB","#react","#graphQL","#apollo"]} />
             <Card cardUrl="https://keller-text-editor-c96daa18d32b.herokuapp.com/"
                   btnUrl="https://github.com/erin-m-keller/keller-text-editor"
                   src={pwaScreenshot}
