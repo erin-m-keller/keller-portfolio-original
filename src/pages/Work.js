@@ -23,6 +23,7 @@ import socialNetworkScreenshot from "../assets/images/social-network-screenshot.
 import pwaScreenshot from "../assets/images/pwa-screenshot.png";
 import ecommerceScreenshot from "../assets/images/ecommerce-screenshot.png";
 import bookSearch from "../assets/images/book-search.png";
+import reduxStore from "../assets/images/redux-store.png";
  
 class Work extends Component {
   render() {
@@ -47,6 +48,12 @@ class Work extends Component {
             </div>
             <h2>Personal Web Projects</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
+            <Card cardUrl="https://keller-redux-6960698a5b38.herokuapp.com/"
+                  btnUrl="https://github.com/erin-m-keller/keller-redux"
+                  src={reduxStore}
+                  alt="Shop/Shop Store"
+                  title="Shop/Shop Store"
+                  tags={["#html5","#css","#javascript","#nodeJS","#expressJS","#mongoDB","#mongoose","#react","#redux","#graphQL","#apollo"]} />
             <Card cardUrl="https://keller-book-search-f22cfc8fab39.herokuapp.com/"
                   btnUrl="https://github.com/erin-m-keller/keller-book-search"
                   src={bookSearch}
