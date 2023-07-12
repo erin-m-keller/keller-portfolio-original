@@ -90,12 +90,6 @@ class Work extends Component {
                     alt="Work Day Scheduler"
                     title="Work Day Scheduler"
                     tags={["#html","#css","#jquery","#day.js"]} />
-              <Card cardUrl="https://erin-m-keller.github.io/keller-quiz/"
-                    btnUrl="https://github.com/erin-m-keller/keller-quiz"
-                    src={quizScreenshot}
-                    alt="Coding Quiz"
-                    title="Coding Quiz"
-                    tags={["#html","#css","#bootstrap","#javascript"]} />
               <Card cardUrl="https://erin-m-keller.github.io/keller-password/"
                     btnUrl="https://github.com/erin-m-keller/keller-password"
                     src={pwdScreenshot}
@@ -144,6 +138,12 @@ class Work extends Component {
                     alt="LastFM Music Artist Search Engine"
                     title="LastFM Music Artist Search Engine"
                     tags={["#html","#css","#bulma-css","#javascript","#react","#lastfm api"]} />
+              <Card cardUrl="https://erin-m-keller.github.io/keller-quiz/"
+                    btnUrl="https://github.com/erin-m-keller/keller-quiz"
+                    src={quizScreenshot}
+                    alt="Coding Quiz"
+                    title="Coding Quiz"
+                    tags={["#html","#css","#bootstrap","#javascript"]} />
             </div>
             <h2>Node.js Applications</h2>
             <div className="card-list" style={{marginBottom:"2em"}}>
